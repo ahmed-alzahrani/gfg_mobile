@@ -3,13 +3,11 @@ class UserValidator {
 
   // validates that a proper e-mail address has been entered
   bool isEmailAddressValid(String email) {
-    print("checking this email for validity: $email");
     RegExp exp = new RegExp (
       r"^[\w-.]+@([\w-]+.)+[\w-]{2,4}$",
       caseSensitive: false,
       multiLine: false,
     );
-    print(exp.hasMatch(email).toString());
     return exp.hasMatch(email);
   }
 

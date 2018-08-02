@@ -46,4 +46,8 @@ class AuthService {
     return auth.signOut();
   }
 
+  Future<void> passwordReset(String email) async {
+    return auth.sendPasswordResetEmail(email: email);
+  }
+
 }

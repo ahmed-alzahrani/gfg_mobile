@@ -60,6 +60,16 @@ class _LoginPageState extends State<LoginPage> {
     }
   }
 
+  void _passwordReset () async {
+    final form = formKey.currentState;
+    form.save();
+    if (validate.isEmailAddressValid(_email)) {
+      auth.passwordReset(_email);
+    } else {
+      form.validate();
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     return new Scaffold(
@@ -106,6 +116,10 @@ class _LoginPageState extends State<LoginPage> {
         new FlatButton(
           child: new Text('Don\'t have an account? Tap here to register.', style: new TextStyle(fontSize: 14.0)),
           onPressed: _formChange,
+        ),
+        new FlatButton(
+          child: new Text('Forgot Password?', style: new TextStyle(fontSize: 14.0)),
+          onPressed: _passwordReset,
         )
       ];
     } else {
