@@ -19,7 +19,7 @@ class DataService {
   }
 
   // should be working, API-Football is currently broken when querying a single player
-  Future<Object> getPlayer (String id) async {
+  Future<Object> player (String id) async {
     try {
       String url = 'http://10.0.2.2:8080/player/' + id;
       final response = await dio.get(url);
@@ -30,7 +30,7 @@ class DataService {
     }
   }
 
-  Future<List> getCharities () async {
+  Future<List> charities () async {
     try {
       final response = await dio.get('http://10.0.2.2:8080/charities');
       return response.data;
@@ -52,7 +52,7 @@ class DataService {
     }
   }
 
-  Future<List> getPlayerMatches (teamId) async {
+  Future<List> playerMatches (teamId) async {
     try {
       final url = 'http://10.0.2.2:8080/playerMatches/' + teamId;
       final response = await dio.get(url);
