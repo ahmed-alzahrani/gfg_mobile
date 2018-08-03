@@ -17,3 +17,6 @@ __01/08/18__
 __02/08/18__
 
 - Added password reset request to login page
+
+- Added data_service and migrated responsibilites of collecting allPlayer, all charities, matches, playerMatches and specific
+players to data_service

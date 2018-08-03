@@ -12,8 +12,6 @@ class AuthService {
     try {
       FirebaseUser user = await auth.createUserWithEmailAndPassword(email: email, password: password);
       print("user: $user");
-      // url = http://localhost:8080/addUser
-      // post request, the parameters are "uid": user's uid and "email" which is the email
       Response response = await dio.post(
         "http://10.0.2.2:8080/addUser",
         data: {
@@ -38,8 +36,13 @@ class AuthService {
   }
 
   Future<String> currentUser () async {
-    FirebaseUser user = await auth.currentUser();
-    return user.uid;
+    try {
+      FirebaseUser user = await auth.currentUser();
+      return user.uid;
+    } catch(error) {
+      print("error: $error");
+      return null;
+    }
   }
 
   Future<void> signOut() async {
