@@ -18,5 +18,11 @@ __02/08/18__
 
 - Added password reset request to login page
 
-- Added data_service and migrated responsibilites of collecting allPlayer, all charities, matches, playerMatches and specific
+- Added data_service and migrated responsibilities of collecting allPlayer, all charities, matches, playerMatches and specific
 players to data_service
+
+__03/08/18__
+
+- Added basic implementation of all subscription_service responsibilities
+
+- This includes adding, removing, updating, verifying and querying user subscriptions through the node js backend
