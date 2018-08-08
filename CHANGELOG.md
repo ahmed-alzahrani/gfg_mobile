@@ -34,3 +34,7 @@ __08/08/18__
 - Added page for each view and set up toggling between each view on click
 
 - Setup Players page as a basic list view that pulls the info from the server and displays each player
+
+- Added Charity table view on load
+
+- Removed extra prints from players page

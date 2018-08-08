@@ -38,22 +38,19 @@ class PlayersPageState extends State<PlayersPage>{
   }
 
   Future<String> _getPlayers() async {
-    print('getting players');
     List allPlayers = await data.allPlayers();
     this.setState(() {
       players = allPlayers;
       filteredPlayers = allPlayers;
     });
-    return "Success";
+    return "Completed";
   }
 
 
   Widget _buildPlayers() {
     return ListView.builder(
-      itemCount: players == null ? 0 : players.length,
+      itemCount: players == null ? 0 : filteredPlayers.length,
       itemBuilder: (BuildContext content, int index) {
-        print('building an item');
-        print(index);
         return new ListTile(
           title: Text(filteredPlayers[index]['name']),
           subtitle: Text(filteredPlayers[index]['team']),
