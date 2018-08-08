@@ -6,6 +6,7 @@ class MatchesPage extends StatelessWidget{
     return Scaffold(
       appBar: AppBar(
         title: Text('Matches'),
+        centerTitle: true,
       ),
     );
   }

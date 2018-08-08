@@ -24,6 +24,7 @@ class PlayersPageState extends State<PlayersPage>{
     return Scaffold(
       appBar: AppBar(
         title: Text('Players'),
+        centerTitle: true,
         actions: <Widget>[
           new FlatButton(
             child: new Text('Logout', style: new TextStyle(fontSize: 17.0, color: Colors.white)),

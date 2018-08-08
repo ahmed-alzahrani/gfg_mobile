@@ -6,6 +6,7 @@ class ProfilePage extends StatelessWidget{
     return Scaffold(
       appBar: AppBar(
         title: Text('Profile'),
+        centerTitle: true,
       ),
     );
   }

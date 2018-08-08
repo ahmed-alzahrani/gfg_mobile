@@ -38,3 +38,5 @@ __08/08/18__
 - Added Charity table view on load
 
 - Removed extra prints from players page
+
+- Set all titles to centre title
