@@ -26,3 +26,11 @@ __03/08/18__
 - Added basic implementation of all subscription_service responsibilities
 
 - This includes adding, removing, updating, verifying and querying user subscriptions through the node js backend
+
+__08/08/18__
+
+- Added tab bar controller to Main page that toggles through Profile, Players, Charities, Matches, and About
+
+- Added page for each view and set up toggling between each view on click
+
+- Setup Players page as a basic list view that pulls the info from the server and displays each player

@@ -11,7 +11,7 @@ class App extends StatelessWidget {
     return new MaterialApp(
       title: 'gfg_mobile',
       theme: new ThemeData(
-        primarySwatch: Colors.purple,
+        primarySwatch: Colors.orange,
       ),
       home: new RootPage(),
     );

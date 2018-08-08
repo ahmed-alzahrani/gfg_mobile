@@ -33,11 +33,12 @@ class _RootPageState extends State<RootPage> {
     });
   }
 
-  void _signedOut(){
+  void _signedOut() {
     setState(() {
       _authStatus = AuthStatus.notSignedIn;
     });
   }
+
 
   @override
   Widget build(BuildContext context) {
