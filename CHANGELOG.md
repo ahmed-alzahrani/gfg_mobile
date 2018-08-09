@@ -46,3 +46,21 @@ __08/08/18__
 - Added two new pages, Charity Details and Player Details page to show detailed information on Player/Charity information once it has been clicked on from the list
 
 - Set up Navigation from Players / Charities to detailed view and back
+
+__09/08/18__
+
+- Added subscription / unsubscription from Detailed Player view page
+
+- When a detailed player page is loaded, there is a cupertino picker with all of the charities in it
+
+- If a user is subscribed to the player, an unsubscribe button populates the app bar and vice versa
+
+- When pressed, the subscribe button creates a subscription through the backend in Firestore with the relevant player/charity
+
+- Added a trim() to the email submitted in userValidator to protect against erroneous white spaces
+
+- Used Navigator to fix logout flow from Players page, needs to be replicated across all pages
+
+- Updated Player model
+
+- Added logout route to main.dart

@@ -17,7 +17,7 @@ class SubscriptionService {
           'playerId': player
         },
       );
-      return response.data.result;
+      return response.data['result'];
     } catch (error) {
       print("error: $error");
       return false;
@@ -39,7 +39,8 @@ class SubscriptionService {
           'charityId': charity
         }
       );
-      return response.data.result;
+      print('returning ${response.data['result']}');
+      return response.data['result'];
     } catch (error) {
       print("error: $error");
       return false;
@@ -56,7 +57,7 @@ class SubscriptionService {
           'playerId': player
         }
       );
-      return response.data.result;
+      return response.data['result'];
     } catch (error) {
       print("error: $error");
       return false;
@@ -75,7 +76,7 @@ class SubscriptionService {
           'charityId': charityId,
         }
       );
-      return response.data.result;
+      return response.data['result'];
     } catch (error) {
       print("error: $error");
       return false;

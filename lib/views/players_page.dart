@@ -30,7 +30,10 @@ class PlayersPageState extends State<PlayersPage>{
         actions: <Widget>[
           new FlatButton(
             child: new Text('Logout', style: new TextStyle(fontSize: 17.0, color: Colors.white)),
-            onPressed: auth.signOut,
+            onPressed: () {
+              auth.signOut();
+              Navigator.pushReplacementNamed(context, '/logout');
+            },
           ),
         ],
       ),
@@ -70,9 +73,10 @@ class PlayersPageState extends State<PlayersPage>{
     String name = filteredPlayers[index]['name'];
     String age = filteredPlayers[index]['age'];
     String position = filteredPlayers[index]['position'];
-    String team = filteredPlayers[index]['team'];
+    String team = filteredPlayers[index]['team_id'];
+    String teamName = filteredPlayers[index]['team'];
     String league = filteredPlayers[index]['league'];
-    Player player = new Player(id, name, age, position, team, league);
+    Player player = new Player(id, name, age, position, team, teamName, league);
 
     Navigator.push(
       context,

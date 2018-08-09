@@ -40,13 +40,12 @@ class CharitiesPageState extends State<CharitiesPage> {
     );
   }
 
-  Future<String> _getCharities() async {
+  Future<void> _getCharities() async {
     List allCharities = await data.charities();
     this.setState((){
       charities = allCharities;
       filteredCharities = allCharities;
     });
-    return "Completed";
   }
 
   Widget _buildCharities() {

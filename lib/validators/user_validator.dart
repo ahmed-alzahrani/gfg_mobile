@@ -8,7 +8,7 @@ class UserValidator {
       caseSensitive: false,
       multiLine: false,
     );
-    return exp.hasMatch(email);
+    return exp.hasMatch(email.trim());
   }
 
   // TODO: Fix password valdiation regex, works in dartPad but not here
@@ -24,7 +24,6 @@ class UserValidator {
   */
 
   bool isPasswordValid(String password) {
-    print("password is: $password");
     return true;
   }
 }

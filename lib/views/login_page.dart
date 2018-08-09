@@ -43,7 +43,7 @@ class _LoginPageState extends State<LoginPage> {
       auth.createAccount(_email, _password);
       widget.onSignedIn();
     } else {
-      // either the email or pass is invalid
+      print("the form was invalid somehow");
       // TODO: add Widget for incorrect e-mail / pass?
     }
   }

@@ -14,6 +14,9 @@ class App extends StatelessWidget {
         primarySwatch: Colors.orange,
       ),
       home: new RootPage(),
+      routes: {
+        '/logout': (_) => new RootPage(),
+      },
     );
   }
 
