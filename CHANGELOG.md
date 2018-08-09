@@ -40,3 +40,9 @@ __08/08/18__
 - Removed extra prints from players page
 
 - Set all titles to centre title
+
+- Added models for Player and Charity information
+
+- Added two new pages, Charity Details and Player Details page to show detailed information on Player/Charity information once it has been clicked on from the list
+
+- Set up Navigation from Players / Charities to detailed view and back

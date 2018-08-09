@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'dart:async';
+import 'package:gfg_mobile/views/charity_details_page.dart';
 import 'package:gfg_mobile/services/data_service.dart';
 import 'package:gfg_mobile/services/auth_service.dart';
+import 'package:gfg_mobile/models/charity.dart';
 
 class CharitiesPage extends StatefulWidget {
   @override
@@ -55,9 +57,26 @@ class CharitiesPageState extends State<CharitiesPage> {
           title: Text(filteredCharities[index]['name']),
           subtitle: Text(filteredCharities[index]['website']),
           leading: CircleAvatar(child: Text(filteredCharities[index]['name'][0])),
+          onTap: () => _charityTapped(index),
         );
       }
     );
+  }
+
+  void _charityTapped(int index) {
+    String name = filteredCharities[index]['name'];
+    String id = filteredCharities[index]['id'];
+    String description = filteredCharities[index]['description'];
+    String website = filteredCharities[index]['website'];
+    String paymentInfo = filteredCharities[index]['payment_info'];
+    Charity charity = new Charity(name, id, description, website, paymentInfo);
+
+    Navigator.push(
+      context,
+      MaterialPageRoute(builder: (context) => CharityDetailsPage(charity))
+    );
+
+
   }
 
 

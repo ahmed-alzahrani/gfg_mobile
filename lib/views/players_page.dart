@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'dart:async';
 import 'package:gfg_mobile/services/auth_service.dart';
 import 'package:gfg_mobile/services/data_service.dart';
+import 'package:gfg_mobile/views/player_details_page.dart';
+import 'package:gfg_mobile/models/player.dart';
 
 class PlayersPage extends StatefulWidget {
   @override
@@ -56,11 +58,25 @@ class PlayersPageState extends State<PlayersPage>{
           title: Text(filteredPlayers[index]['name']),
           subtitle: Text(filteredPlayers[index]['team']),
           leading: CircleAvatar(child: Text(filteredPlayers[index]['position'][0])),
+          onTap: () => _playerTapped(index),
         );
 
       },
     );
   }
 
+  void _playerTapped(int index) {
+    String id = filteredPlayers[index]['id'];
+    String name = filteredPlayers[index]['name'];
+    String age = filteredPlayers[index]['age'];
+    String position = filteredPlayers[index]['position'];
+    String team = filteredPlayers[index]['team'];
+    String league = filteredPlayers[index]['league'];
+    Player player = new Player(id, name, age, position, team, league);
 
+    Navigator.push(
+      context,
+      MaterialPageRoute(builder: (context) => PlayerDetailsPage(player))
+    );
+  }
 }
