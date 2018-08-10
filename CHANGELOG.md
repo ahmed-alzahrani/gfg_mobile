@@ -64,3 +64,5 @@ __09/08/18__
 - Updated Player model
 
 - Added logout route to main.dart
+
+- Added imagePath to charity objects as they arrive from the backend

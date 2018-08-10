@@ -67,8 +67,9 @@ class CharitiesPageState extends State<CharitiesPage> {
     String id = filteredCharities[index]['id'];
     String description = filteredCharities[index]['description'];
     String website = filteredCharities[index]['website'];
+    String imagePath = filteredCharities[index]['imagePath'];
     String paymentInfo = filteredCharities[index]['payment_info'];
-    Charity charity = new Charity(name, id, description, website, paymentInfo);
+    Charity charity = new Charity(name, id, description, website, imagePath, paymentInfo);
 
     Navigator.push(
       context,

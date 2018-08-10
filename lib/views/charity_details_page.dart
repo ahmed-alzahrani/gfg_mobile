@@ -19,7 +19,13 @@ class CharityDetailsPageWidgetState extends State<CharityDetailsPage> {
         appBar: AppBar(
             title: Text(charity.name),
             centerTitle: true,
-        )
+        ),
+      body: new Container(
+        child: new Image.asset(
+          charity.imagePath,
+          height: 60.0,
+        ),
+      ),
     );
   }
 }
