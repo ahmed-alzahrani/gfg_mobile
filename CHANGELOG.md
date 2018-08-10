@@ -66,3 +66,7 @@ __09/08/18__
 - Added logout route to main.dart
 
 - Added imagePath to charity objects as they arrive from the backend
+
+__10/08/18__
+
+- Added photos, description and raised button with link to external website on each Charity Details Page

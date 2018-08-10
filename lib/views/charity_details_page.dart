@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
 import 'package:gfg_mobile/models/charity.dart';
 
 class CharityDetailsPage extends StatefulWidget {
@@ -21,11 +22,36 @@ class CharityDetailsPageWidgetState extends State<CharityDetailsPage> {
             centerTitle: true,
         ),
       body: new Container(
-        child: new Image.asset(
-          charity.imagePath,
-          height: 60.0,
+        padding: EdgeInsets.only(
+          left: 90.0,
+          right: 90.0,
+          top: 50.0,
         ),
+        child: new Column(
+          children: [
+            new Image.asset(
+              charity.imagePath,
+              height: 200.0,
+              width: 200.0,
+            ),
+            new Text(charity.description),
+            new RaisedButton(
+              onPressed: _launchUrl,
+              child: new Text('Visit Website'),
+            )
+          ],
+        )
       ),
     );
+  }
+
+  _launchUrl() async {
+    String url = charity.website;
+    try {
+      await launch(url);
+    } catch (error) {
+      throw 'error $error trying to launch $url';
+
+    }
   }
 }
