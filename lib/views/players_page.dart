@@ -4,6 +4,7 @@ import 'package:gfg_mobile/services/auth_service.dart';
 import 'package:gfg_mobile/services/data_service.dart';
 import 'package:gfg_mobile/views/player_details_page.dart';
 import 'package:gfg_mobile/models/player.dart';
+import 'package:gfg_mobile/util/themes.dart';
 
 class PlayersPage extends StatefulWidget {
   @override
@@ -13,6 +14,7 @@ class PlayersPage extends StatefulWidget {
 class PlayersPageState extends State<PlayersPage>{
   final data = new DataService();
   final auth = new AuthService();
+  final theme = new Themes();
   List players;
   List filteredPlayers;
 
@@ -25,11 +27,14 @@ class PlayersPageState extends State<PlayersPage>{
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Players'),
+        title: Text(
+          'Players',
+          style: theme.textStyle,
+        ),
         centerTitle: true,
         actions: <Widget>[
           new FlatButton(
-            child: new Text('Logout', style: new TextStyle(fontSize: 17.0, color: Colors.white)),
+            child: new Text('Logout', style: new TextStyle(fontSize: 17.0, color: theme.textColor)),
             onPressed: () {
               auth.signOut();
               Navigator.pushReplacementNamed(context, '/logout');
@@ -58,9 +63,21 @@ class PlayersPageState extends State<PlayersPage>{
       itemCount: players == null ? 0 : filteredPlayers.length,
       itemBuilder: (BuildContext content, int index) {
         return new ListTile(
-          title: Text(filteredPlayers[index]['name']),
-          subtitle: Text(filteredPlayers[index]['team']),
-          leading: CircleAvatar(child: Text(filteredPlayers[index]['position'][0])),
+          title: Text(
+            filteredPlayers[index]['name'],
+            style: theme.textStyle,
+          ),
+          subtitle: Text(
+            filteredPlayers[index]['team'],
+            style: theme.textStyle,
+          ),
+          leading: CircleAvatar(
+              backgroundColor: Colors.black,
+              child: Text(
+                filteredPlayers[index]['position'][0],
+                style: theme.textStyle,
+              )
+          ),
           onTap: () => _playerTapped(index),
         );
 

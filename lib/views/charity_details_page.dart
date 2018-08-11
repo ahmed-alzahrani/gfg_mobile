@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:gfg_mobile/models/charity.dart';
+import 'package:gfg_mobile/util/themes.dart';
 
 class CharityDetailsPage extends StatefulWidget {
   CharityDetailsPage(this.charity);
@@ -11,6 +12,7 @@ class CharityDetailsPage extends StatefulWidget {
 }
 
 class CharityDetailsPageWidgetState extends State<CharityDetailsPage> {
+  final theme = new Themes();
   CharityDetailsPageWidgetState(this.charity);
   final Charity charity;
 
@@ -18,27 +20,56 @@ class CharityDetailsPageWidgetState extends State<CharityDetailsPage> {
   Widget build(BuildContext context) {
     return new Scaffold(
         appBar: AppBar(
-            title: Text(charity.name),
+          leading: new IconButton(
+            icon: new Icon(
+              Icons.arrow_back,
+              color: theme.textColor,
+            ),
+            onPressed: () => Navigator.of(context).pop(),
+          ),
+            title: Text(
+              charity.name,
+              style: theme.textStyle,
+            ),
             centerTitle: true,
         ),
       body: new Container(
         padding: EdgeInsets.only(
-          left: 90.0,
-          right: 90.0,
+          left: 50.0,
+          right: 50.0,
           top: 50.0,
         ),
         child: new Column(
           children: [
-            new Image.asset(
-              charity.imagePath,
-              height: 200.0,
-              width: 200.0,
+            new Container(
+              child: new Image.asset(
+                charity.imagePath ?? 'assets/images/charities/Charity_Not_Found.png',
+                height: 200.0,
+                width: 200.0,
+              )
             ),
-            new Text(charity.description),
-            new RaisedButton(
-              onPressed: _launchUrl,
-              child: new Text('Visit Website'),
-            )
+            new Container(
+              padding: EdgeInsets.only(
+                top: 50.0,
+              ),
+              child: new Text(
+                charity.description,
+                style: theme.textStyle,
+              ),
+            ),
+            new Container(
+              padding: EdgeInsets.only(
+                top: 150.0,
+              ),
+              child: new RaisedButton(
+
+                onPressed: _launchUrl,
+                child: new Text(
+                  'Visit Website',
+                  style: theme.textStyle,
+                ),
+              )
+            ),
           ],
         )
       ),

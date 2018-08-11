@@ -38,6 +38,7 @@ flutter:
     - assets/images/charities/Sightsavers.png
     - assets/images/charities/Unicef.png
     - assets/images/charities/United_Way_Worldwide.png
+    - assets/images/charities/Charity_Not_Found.png
 
   # To add assets to your application, add an assets section, like this:
   #  - images/a_dot_burr.jpeg

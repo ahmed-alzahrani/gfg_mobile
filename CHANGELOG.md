@@ -70,3 +70,17 @@ __09/08/18__
 __10/08/18__
 
 - Added photos, description and raised button with link to external website on each Charity Details Page
+
+__11/08/18__
+
+- Added individual asset paths to assets in pubspec.YAML to supress IDE warning
+
+- Added Themes class to serialize theme info across all pages such as textColor, style etc
+
+- Created new dark theme across the app with background color as Colors.grey[850], a black secondary color for the tab bar and app bar, and Colors.limeAccent[700]
+
+- Changed Charity Details Page from a container to a column of containers
+
+- Wrapped BottomNavigatorBar to a theme in order to change its background by specifying a canvas color
+
+- Added leading iconButton to detail pages in order to override default iconButton and change its color

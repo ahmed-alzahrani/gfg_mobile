@@ -4,6 +4,7 @@ import 'package:gfg_mobile/views/charity_details_page.dart';
 import 'package:gfg_mobile/services/data_service.dart';
 import 'package:gfg_mobile/services/auth_service.dart';
 import 'package:gfg_mobile/models/charity.dart';
+import 'package:gfg_mobile/util/themes.dart';
 
 class CharitiesPage extends StatefulWidget {
   @override
@@ -13,6 +14,7 @@ class CharitiesPage extends StatefulWidget {
 class CharitiesPageState extends State<CharitiesPage> {
   final auth = new AuthService();
   final data = new DataService();
+  final theme = new Themes();
   List charities;
   List filteredCharities;
 
@@ -25,11 +27,14 @@ class CharitiesPageState extends State<CharitiesPage> {
   Widget build(BuildContext context) {
     return new Scaffold(
       appBar: AppBar(
-        title: new Text('Charities'),
+        title: new Text(
+          'Charities',
+          style: theme.textStyle,
+        ),
         centerTitle: true,
         actions: <Widget>[
           new FlatButton(
-            child: new Text('Logout', style: new TextStyle(fontSize: 17.0, color: Colors.white)),
+            child: new Text('Logout', style: new TextStyle(fontSize: 17.0, color: theme.textColor)),
             onPressed: auth.signOut,
           ),
         ]
@@ -53,9 +58,20 @@ class CharitiesPageState extends State<CharitiesPage> {
       itemCount: charities == null ? 0 : filteredCharities.length,
       itemBuilder: (BuildContext content, int index) {
         return new ListTile(
-          title: Text(filteredCharities[index]['name']),
-          subtitle: Text(filteredCharities[index]['website']),
-          leading: CircleAvatar(child: Text(filteredCharities[index]['name'][0])),
+          title: Text(
+            filteredCharities[index]['name'],
+            style: theme.textStyle,
+          ),
+          subtitle: Text(
+            filteredCharities[index]['website'],
+            style: theme.textStyle,
+          ),
+          leading: CircleAvatar(
+              backgroundColor: Colors.black,
+              child: Text(
+                filteredCharities[index]['name'][0],
+                style:  theme.textStyle
+              )),
           onTap: () => _charityTapped(index),
         );
       }

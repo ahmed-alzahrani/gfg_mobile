@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import'package:gfg_mobile/validators/user_validator.dart';
+import'package:gfg_mobile/util//user_validator.dart';
 import 'package:gfg_mobile/services/auth_service.dart';
+import 'package:gfg_mobile/util/themes.dart';
 
 class LoginPage extends StatefulWidget {
 
@@ -21,6 +22,7 @@ class _LoginPageState extends State<LoginPage> {
   final formKey = new GlobalKey<FormState>();
   final validate = new UserValidator();
   final auth = new AuthService();
+  final theme = new Themes();
 
   String _email;
   String _password;
@@ -110,7 +112,9 @@ class _LoginPageState extends State<LoginPage> {
     if (_form == FormType.login) {
       return [
         new RaisedButton(
-          child: new Text('Login', style: new TextStyle(fontSize: 20.0)),
+          child: new Text('Login', style: new TextStyle(
+              fontSize: 20.0
+          )),
           onPressed: _loginPressed,
         ),
         new FlatButton(

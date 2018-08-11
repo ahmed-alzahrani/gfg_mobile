@@ -3,6 +3,7 @@ import 'package:gfg_mobile/models/player.dart';
 import 'package:gfg_mobile/services/subscription_service.dart';
 import 'package:gfg_mobile/services/data_service.dart';
 import 'package:flutter/cupertino.dart';
+import 'package:gfg_mobile/util/themes.dart';
 
 class PlayerDetailsPage extends StatefulWidget {
   PlayerDetailsPage(this.player);
@@ -22,6 +23,7 @@ class PlayerDetailsPageWidgetState extends State<PlayerDetailsPage> {
   final Player player;
   final sub = new SubscriptionService();
   final data = new DataService();
+  final theme = new Themes();
   subscribed _subbed;
   List charities = [];
   int _selectedIndex;
@@ -48,26 +50,29 @@ class PlayerDetailsPageWidgetState extends State<PlayerDetailsPage> {
   Widget build(BuildContext context) {
     return new Scaffold(
       appBar: AppBar(
-        title: Text(player.name),
+        leading: new IconButton(
+            icon: new Icon(
+              Icons.arrow_back,
+              color: theme.textColor,
+            ),
+            onPressed: () => Navigator.of(context).pop(),
+        ),
+        title: Text(
+          player.name,
+          style: theme.textStyle,
+        ),
         centerTitle: true,
         actions: _buildButton()
       ),
       body: new Container(
-        padding: EdgeInsets.all(16.0),
-        child: new CupertinoPicker(
-            itemExtent: 20.0,
-            backgroundColor: Colors.white,
-            onSelectedItemChanged: (int index) {
-              setState(() {
-                _selectedIndex = index;
-              });
-            },
-            children: new List<Widget>.generate(charities.length ?? 0, (int index) {
-              return new Center(
-                child: new Text(charities[index]['name']),
-              );
-            })
-        )
+        padding: EdgeInsets.only(
+          top: 20.0,
+        ),
+        child: new Column(
+          children: [
+            //TODO: Implement DropDownMenuButton that can populate a form with the name of the Charity the subscription is being added with
+          ]
+        ),
       )
     );
   }
@@ -79,14 +84,14 @@ class PlayerDetailsPageWidgetState extends State<PlayerDetailsPage> {
     if (_subbed == subscribed.subbed) {
       return [
         new FlatButton(
-          child: new Text('Unsubscribe', style: new TextStyle(fontSize: 17.0, color: Colors.white)),
+          child: new Text('Unsubscribe', style: new TextStyle(fontSize: 17.0, color: theme.textColor)),
           onPressed: _unsubscribeTapped,
         )
       ];
     } else {
       return [
         new FlatButton(
-          child: new Text('Subscribe', style: new TextStyle(fontSize: 17.0, color: Colors.white)),
+          child: new Text('Subscribe', style: new TextStyle(fontSize: 17.0, color: theme.textColor)),
           onPressed: _subscribeTapped
         )
       ];
