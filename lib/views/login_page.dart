@@ -75,8 +75,12 @@ class _LoginPageState extends State<LoginPage> {
   @override
   Widget build(BuildContext context) {
     return new Scaffold(
+      backgroundColor: theme.backgroundColor,
       appBar: new AppBar(
-        title: new Text('Login'),
+        title: new Text(
+          'Login',
+          style: theme.textStyle,
+        ),
         centerTitle: true,
       ),
       body: new Container(
@@ -113,27 +117,28 @@ class _LoginPageState extends State<LoginPage> {
       return [
         new RaisedButton(
           child: new Text('Login', style: new TextStyle(
-              fontSize: 20.0
+            fontSize: 20.0,
+            color: theme.textColor,
           )),
           onPressed: _loginPressed,
         ),
         new FlatButton(
-          child: new Text('Don\'t have an account? Tap here to register.', style: new TextStyle(fontSize: 14.0)),
+          child: new Text('Don\'t have an account? Tap here to register.', style: new TextStyle(fontSize: 14.0, color: theme.textColor)),
           onPressed: _formChange,
         ),
         new FlatButton(
-          child: new Text('Forgot Password?', style: new TextStyle(fontSize: 14.0)),
+          child: new Text('Forgot Password?', style: new TextStyle(fontSize: 14.0, color: theme.textColor)),
           onPressed: _passwordReset,
         )
       ];
     } else {
       return [
         new RaisedButton(
-          child: new Text('Create an Account', style: new TextStyle(fontSize: 20.0)),
+          child: new Text('Create an Account', style: new TextStyle(fontSize: 20.0, color: theme.textColor)),
           onPressed: _createAccountPressed,
         ),
         new FlatButton(
-          child: new Text('Have an account? Click here to login.', style: new TextStyle(fontSize: 14.0)),
+          child: new Text('Have an account? Click here to login.', style: new TextStyle(fontSize: 14.0, color: theme.textColor)),
           onPressed: _formChange,
         )
       ];

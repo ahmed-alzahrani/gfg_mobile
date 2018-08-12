@@ -84,3 +84,15 @@ __11/08/18__
 - Wrapped BottomNavigatorBar to a theme in order to change its background by specifying a canvas color
 
 - Added leading iconButton to detail pages in order to override default iconButton and change its color
+
+__12/08/18__
+
+- Added numbers and statistics information to player model in order to populate detailedPlayer page
+
+- Added null check in auth service for when the app starts up and we check for a logged in user so we don't try access null.uid
+
+- Minor UI updates to login page
+
+- Added drop down menu to detailed players page that is populated with the charity names, and is linked to subscription logic to add subscription with that charity
+
+-

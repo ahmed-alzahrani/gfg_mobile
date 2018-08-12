@@ -38,7 +38,11 @@ class AuthService {
   Future<String> currentUser () async {
     try {
       FirebaseUser user = await auth.currentUser();
-      return user.uid;
+      if (user == null) {
+        return null;
+      } else {
+        return user.uid;
+      }
     } catch(error) {
       print("error: $error");
       return null;

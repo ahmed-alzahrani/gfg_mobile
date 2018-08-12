@@ -26,7 +26,8 @@ class PlayerDetailsPageWidgetState extends State<PlayerDetailsPage> {
   final theme = new Themes();
   subscribed _subbed;
   List charities = [];
-  int _selectedIndex;
+  int _selectedIndex = -1;
+  String _selectedCharity;
 
   @override
   void initState() {
@@ -65,12 +66,32 @@ class PlayerDetailsPageWidgetState extends State<PlayerDetailsPage> {
         actions: _buildButton()
       ),
       body: new Container(
-        padding: EdgeInsets.only(
-          top: 20.0,
-        ),
         child: new Column(
           children: [
-            //TODO: Implement DropDownMenuButton that can populate a form with the name of the Charity the subscription is being added with
+            new Container(
+              child: new DropdownButton(
+                items: new List<DropdownMenuItem>.generate(charities.length ?? 0, (int index) {
+                  return new DropdownMenuItem(
+                    child: new Text(charities[index]['name']),
+                    value: index,
+                  );
+                }),
+                hint: new Text(
+                  _selectedCharity ?? 'select a charity',
+                  style: new TextStyle(color: theme.textColor),
+                ),
+                onChanged: (value) {
+                  setState(() {
+                    _selectedIndex = value;
+                    _selectedCharity = charities[value]['name'];
+                  });
+                },
+              ),
+              padding: EdgeInsets.only(
+                top: 500.0,
+                left: 80.0,
+              ),
+            ),
           ]
         ),
       )
@@ -99,10 +120,15 @@ class PlayerDetailsPageWidgetState extends State<PlayerDetailsPage> {
   }
 
   void _subscribeTapped() async {
-    bool result = await sub.addSubscription(player.id, player.name, player.team, player.teamName, charities[_selectedIndex]['name'], charities[_selectedIndex]['id']);
-    if (result) {
-      _subbed = subscribed.subbed;
-      setState(() {});
+    if (_selectedIndex == -1) {
+      print('select a charity before you try to subscribe!');
+      return;
+    } else {
+      bool result = await sub.addSubscription(player.id, player.name, player.team, player.teamName, charities[_selectedIndex]['name'], charities[_selectedIndex]['id']);
+      if (result) {
+        _subbed = subscribed.subbed;
+        setState(() {});
+      }
     }
   }
 

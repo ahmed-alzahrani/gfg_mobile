@@ -93,7 +93,15 @@ class PlayersPageState extends State<PlayersPage>{
     String team = filteredPlayers[index]['team_id'];
     String teamName = filteredPlayers[index]['team'];
     String league = filteredPlayers[index]['league'];
-    Player player = new Player(id, name, age, position, team, teamName, league);
+    int number = int.parse(filteredPlayers[index]['number']);
+    String appearences = filteredPlayers[index]['appearences'];
+    String goals = filteredPlayers[index]['goals'];
+    String assits = filteredPlayers[index]['assits'];
+    String yellowCards = filteredPlayers[index]['yellowcards'];
+    String redCards = filteredPlayers[index]['redcards'];
+
+    Stats stats = new Stats(appearences, goals, assits, yellowCards, redCards);
+    Player player = new Player(id, name, age, position, team, teamName, league, number, stats);
 
     Navigator.push(
       context,
