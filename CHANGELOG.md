@@ -110,3 +110,5 @@ __14/08/18__
 - Added basic player info to detailed page (age / position / team / league)
 
 - Added player information to Detailed Player Page (limited info as the detailed player queries are not working)
+
+- Made Logout button persistent across all screens of tab bar

@@ -34,7 +34,7 @@ class CharitiesPageState extends State<CharitiesPage> {
         centerTitle: true,
         actions: <Widget>[
           new FlatButton(
-            child: new Text('Logout', style: new TextStyle(fontSize: 17.0, color: theme.textColor)),
+            child: theme.logout,
             onPressed: auth.signOut,
           ),
         ]

@@ -66,27 +66,31 @@ class PlayersPageState extends State<PlayersPage>{
     return new AppBar(
       centerTitle: true,
       title: _appBarTitle,
-      actions: <Widget>[
-        new IconButton(icon: _searchIcon, onPressed: () {
-          setState(() {
-            if (this._searchIcon.icon == Icons.search) {
-              this._searchIcon = new Icon(Icons.close, color: theme.textColor);
-              this._appBarTitle = new TextField(
-                controller: _filter,
-                style: new TextStyle(
-                  color: theme.textColor,
-                ),
-                decoration: new InputDecoration(
+      leading: new IconButton(icon: _searchIcon, onPressed: () {
+        setState(() {
+          if (this._searchIcon.icon == Icons.search) {
+            this._searchIcon = new Icon(Icons.close, color: theme.textColor);
+            this._appBarTitle = new TextField(
+              controller: _filter,
+              style: new TextStyle(
+                color: theme.textColor,
+              ),
+              decoration: new InputDecoration(
                   prefixIcon: new Icon(Icons.search, color: theme.textColor,),
                   hintText: 'Search...',
                   hintStyle: new TextStyle(color: theme.textColor)
-                ),
-              );
-            } else {
-              _searchEnd();
-            }
-          });
-        })
+              ),
+            );
+          } else {
+            _searchEnd();
+          }
+        });
+      }),
+      actions: <Widget>[
+        new FlatButton(
+          child: new Text('Logout', style: new TextStyle(fontSize: 17.0, color: theme.textColor),),
+          onPressed: auth.signOut,
+        )
       ],
     );
   }
