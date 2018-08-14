@@ -88,7 +88,7 @@ class PlayersPageState extends State<PlayersPage>{
       }),
       actions: <Widget>[
         new FlatButton(
-          child: new Text('Logout', style: new TextStyle(fontSize: 17.0, color: theme.textColor),),
+          child: theme.logout,
           onPressed: auth.signOut,
         )
       ],
@@ -99,7 +99,7 @@ class PlayersPageState extends State<PlayersPage>{
     setState(() {
       this._searchIcon = theme.searchIcon;
       this._appBarTitle = theme.playerBarTitle;
-      this._appBarTitle = theme.playerBarTitle;
+      filteredPlayers = players;
       _filter.clear();
     });
   }

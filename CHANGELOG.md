@@ -114,3 +114,5 @@ __14/08/18__
 - Made Logout button persistent across all screens of tab bar
 
 - Implemented Profile page as a stateful widget instead of a stateless one
+
+- Added search bar to charities page
