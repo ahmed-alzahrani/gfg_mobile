@@ -95,4 +95,12 @@ __12/08/18__
 
 - Added drop down menu to detailed players page that is populated with the charity names, and is linked to subscription logic to add subscription with that charity
 
--
+- Added playerBarTitle to theme object
+
+__14/08/18__
+
+- Added search bar functionality to players page that filters by team / name / league, and shows a subsection of the total players based on that search data
+
+- Added injured (true/false) to player model (Football API does NOT accurately report this)
+
+- Simplified constructors for Player and Stats class as well as Charity class
