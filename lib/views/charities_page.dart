@@ -54,6 +54,7 @@ class CharitiesPageState extends State<CharitiesPage> {
       body: Container(
         child: _buildCharities(),
       ),
+      resizeToAvoidBottomPadding: false,
     );
   }
 

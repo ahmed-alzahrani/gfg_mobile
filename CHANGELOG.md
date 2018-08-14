@@ -116,3 +116,5 @@ __14/08/18__
 - Implemented Profile page as a stateful widget instead of a stateless one
 
 - Added search bar to charities page
+
+- Fixed keyboard overflow in players and charities page by setting resizeToAvoidBottomPadding to false in the scaffold on each page

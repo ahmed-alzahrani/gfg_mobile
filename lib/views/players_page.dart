@@ -6,8 +6,6 @@ import 'package:gfg_mobile/views/player_details_page.dart';
 import 'package:gfg_mobile/models/player.dart';
 import 'package:gfg_mobile/util/themes.dart';
 
-//TODO: POST ABOUT / FIGURE OUT KEYBOARD BLOCKING ISSUE
-
 class PlayersPage extends StatefulWidget {
   PlayersPage({ Key key }) : super(key: key);
   @override
@@ -58,7 +56,8 @@ class PlayersPageState extends State<PlayersPage>{
       appBar: buildBar(context),
       body: Container(
         child: _buildPlayers(),
-      )
+      ),
+      resizeToAvoidBottomPadding: false,
     );
   }
 
