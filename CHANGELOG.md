@@ -112,3 +112,5 @@ __14/08/18__
 - Added player information to Detailed Player Page (limited info as the detailed player queries are not working)
 
 - Made Logout button persistent across all screens of tab bar
+
+- Implemented Profile page as a stateful widget instead of a stateless one

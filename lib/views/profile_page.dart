@@ -2,9 +2,14 @@ import 'package:flutter/material.dart';
 import 'package:gfg_mobile/util/themes.dart';
 import 'package:gfg_mobile/services/auth_service.dart';
 
-class ProfilePage extends StatelessWidget{
+class ProfilePage extends StatefulWidget {
+  @override State<StatefulWidget> createState() => ProfilePageWidgetState();
+}
+
+class ProfilePageWidgetState extends State<ProfilePage> {
   final auth = new AuthService();
   final theme = new Themes();
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
