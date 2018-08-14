@@ -6,7 +6,7 @@ import 'package:gfg_mobile/views/player_details_page.dart';
 import 'package:gfg_mobile/models/player.dart';
 import 'package:gfg_mobile/util/themes.dart';
 
-//TODO: POST ABOUT / FIGURE OUT KEYBOARD CLIPPING ISSUE
+//TODO: POST ABOUT / FIGURE OUT KEYBOARD BLOCKING ISSUE
 
 class PlayersPage extends StatefulWidget {
   PlayersPage({ Key key }) : super(key: key);
@@ -84,7 +84,6 @@ class PlayersPageState extends State<PlayersPage>{
               );
             } else {
               _searchEnd();
-
             }
           });
         })
@@ -136,7 +135,7 @@ class PlayersPageState extends State<PlayersPage>{
           leading: CircleAvatar(
             backgroundColor: Colors.black,
             child: Text(
-              filteredPlayers[index]['position'][0],
+              filteredPlayers[index]['number'] ?? '0',
               style: theme.textStyle,
             ),
           ),

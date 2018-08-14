@@ -18,4 +18,6 @@ class Themes {
   );
 
   Icon searchIcon = new Icon(Icons.search, color: Colors.limeAccent[700],);
+
+  Icon backIcon = new Icon(Icons.arrow_back, color: Colors.limeAccent[700],);
 }

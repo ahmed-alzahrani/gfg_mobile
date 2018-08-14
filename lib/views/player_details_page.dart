@@ -52,14 +52,11 @@ class PlayerDetailsPageWidgetState extends State<PlayerDetailsPage> {
     return new Scaffold(
       appBar: AppBar(
         leading: new IconButton(
-            icon: new Icon(
-              Icons.arrow_back,
-              color: theme.textColor,
-            ),
+            icon: theme.backIcon,
             onPressed: () => Navigator.of(context).pop(),
         ),
         title: Text(
-          player.name,
+          '${player.name} #${player.number}',
           style: theme.textStyle,
         ),
         centerTitle: true,
@@ -68,33 +65,156 @@ class PlayerDetailsPageWidgetState extends State<PlayerDetailsPage> {
       body: new Container(
         child: new Column(
           children: [
-            new Container(
-              child: new DropdownButton(
-                items: new List<DropdownMenuItem>.generate(charities.length ?? 0, (int index) {
-                  return new DropdownMenuItem(
-                    child: new Text(charities[index]['name']),
-                    value: index,
-                  );
-                }),
-                hint: new Text(
-                  _selectedCharity ?? 'select a charity',
-                  style: new TextStyle(color: theme.textColor),
-                ),
-                onChanged: (value) {
-                  setState(() {
-                    _selectedIndex = value;
-                    _selectedCharity = charities[value]['name'];
-                  });
-                },
-              ),
-              padding: EdgeInsets.only(
-                top: 500.0,
-                left: 80.0,
-              ),
-            ),
+            _buildFirstRow(),
+            _buildSecondRow(),
+            _buildStats(),
+            _buildDropDown(),
           ]
         ),
       )
+    );
+  }
+
+  Widget _buildFirstRow() {
+    return new Container(
+      child: new Row(
+        children: [
+          new Expanded(
+              child: new Text(
+                'Age: ${player.age}',
+                style: theme.textStyle,
+              )
+          ),
+          new Expanded(
+              child: new Text(
+                'Position: ${player.position}',
+                style: theme.textStyle,
+              )
+          )
+        ],
+      ),
+      padding: EdgeInsets.only(
+        top: 50.0,
+        left: 80.0,
+      ),
+    );
+  }
+
+  Widget _buildSecondRow() {
+    return new Container(
+      child: new Row(
+        children: [
+          new Expanded(
+            child: new Text(
+              'Team: ${player.teamName}',
+              style: theme.textStyle,
+            ),
+          ),
+          new Expanded(
+              child: new Text(
+                'League: ${player.league}',
+                style: theme.textStyle,
+              )
+          ),
+        ],
+      ),
+      padding: EdgeInsets.only(
+        top: 50.0,
+        left: 30.0,
+      ),
+    );
+  }
+
+  Widget _buildStats() {
+    return new Container(
+      child: new Column(
+        children: [
+          new Container(
+            child: new Text(
+              '2018/19 Stats:',
+              style: new TextStyle(
+                fontSize: 24.0,
+                color: theme.textColor,
+                decoration: TextDecoration.underline,
+                decorationColor: theme.textColor,
+              ),
+            )
+          ),
+          new Container(
+            child: new Row(
+              children: [
+                new Expanded(
+                  child: new Text(
+                    'Goals: ${player.stats.goals}',
+                    style: theme.textStyle,
+                  ),
+                ),
+                new Expanded(
+                  child: new Text(
+                    'Assists: ${player.stats.assits}',
+                    style: theme.textStyle,
+                  )
+                )
+              ],
+            ),
+            padding: EdgeInsets.only(
+              left: 80.0,
+              top: 50.0,
+            ),
+          ),
+          new Container(
+            child: new Row(
+              children: [
+                new Expanded(
+                  child: new Text(
+                    'Yellow Cards: ${player.stats.yellowCards}',
+                    style: theme.textStyle,
+                  )
+                ),
+                new Expanded(
+                  child: new Text(
+                    'Red Cards: ${player.stats.redCards}',
+                    style: theme.textStyle,
+                  )
+                )
+              ]
+            ),
+            padding: EdgeInsets.only(
+              left: 80.0,
+              top:  50.0,
+            ),
+          )
+        ],
+      ),
+      padding: EdgeInsets.only(
+        top: 100.0,
+      ),
+    );
+  }
+
+  Widget _buildDropDown() {
+    return new Container(
+     child: new DropdownButton(
+         items: new List<DropdownMenuItem>.generate(charities.length ?? 0, (int index) {
+           return new DropdownMenuItem(
+               child: new Text(charities[index]['name']),
+               value: index
+           );
+         }),
+         hint: new Text(
+           _selectedCharity ?? 'Select a Charity',
+           style: new TextStyle(color: theme.textColor),
+         ),
+         onChanged: (value) {
+           setState(() {
+             _selectedIndex = value;
+             _selectedCharity = charities[value]['name'];
+           });
+         }
+     ),
+      padding: EdgeInsets.only(
+        top: 130.0,
+      ),
     );
   }
 

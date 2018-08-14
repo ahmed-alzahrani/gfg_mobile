@@ -104,3 +104,9 @@ __14/08/18__
 - Added injured (true/false) to player model (Football API does NOT accurately report this)
 
 - Simplified constructors for Player and Stats class as well as Charity class
+
+- Changed CircleAvatar child from letter representing position to player's number
+
+- Added basic player info to detailed page (age / position / team / league)
+
+- Added player information to Detailed Player Page (limited info as the detailed player queries are not working)
