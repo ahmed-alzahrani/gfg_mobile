@@ -131,4 +131,6 @@ __15/08/18__
 
 - Added all icons to theme and took them off home page
 
--
+- Now incoming request for usr profile info successfully serializes the response.data into a Profile object
+
+- Tweaked typing in Profile class

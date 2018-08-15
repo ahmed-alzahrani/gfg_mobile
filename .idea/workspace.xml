@@ -5,17 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="67c8fb9b-f652-4b7d-83ce-bd062c2407dd" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/lib/models/profile.dart" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/lib/views/subscriptions_page.dart" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/CHANGELOG.md" afterPath="$PROJECT_DIR$/CHANGELOG.md" />
-      <change beforePath="$PROJECT_DIR$/lib/models/player.dart" afterPath="$PROJECT_DIR$/lib/models/player.dart" />
-      <change beforePath="$PROJECT_DIR$/lib/services/data_service.dart" afterPath="$PROJECT_DIR$/lib/services/data_service.dart" />
-      <change beforePath="$PROJECT_DIR$/lib/util/themes.dart" afterPath="$PROJECT_DIR$/lib/util/themes.dart" />
-      <change beforePath="$PROJECT_DIR$/lib/views/home_page.dart" afterPath="$PROJECT_DIR$/lib/views/home_page.dart" />
-      <change beforePath="$PROJECT_DIR$/lib/views/matches_page.dart" afterPath="$PROJECT_DIR$/lib/views/matches_page.dart" />
-      <change beforePath="$PROJECT_DIR$/lib/views/players_page.dart" afterPath="$PROJECT_DIR$/lib/views/players_page.dart" />
+      <change beforePath="$PROJECT_DIR$/lib/models/profile.dart" afterPath="$PROJECT_DIR$/lib/models/profile.dart" />
       <change beforePath="$PROJECT_DIR$/lib/views/profile_page.dart" afterPath="$PROJECT_DIR$/lib/views/profile_page.dart" />
+      <change beforePath="$PROJECT_DIR$/pubspec.lock" afterPath="$PROJECT_DIR$/pubspec.lock" />
+      <change beforePath="$PROJECT_DIR$/pubspec.yaml" afterPath="$PROJECT_DIR$/pubspec.yaml" />
     </list>
     <ignored path="$PROJECT_DIR$/.dart_tool/" />
     <ignored path="$PROJECT_DIR$/.idea/" />
@@ -29,14 +25,14 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5362319">
+    <splitter split-orientation="horizontal" split-proportion="0.9">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="profile_page.dart" pinned="false" current-in-tab="true">
+          <file leaf-file-name="profile_page.dart" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/lib/views/profile_page.dart">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="453">
-                  <caret line="71" column="9" lean-forward="true" selection-start-line="71" selection-start-column="9" selection-end-line="71" selection-end-column="9" />
+                <state relative-caret-position="545">
+                  <caret line="95" column="23" lean-forward="true" selection-start-line="95" selection-start-column="23" selection-end-line="95" selection-end-column="23" />
                   <folding>
                     <element signature="e#0#39#0" expanded="true" />
                   </folding>
@@ -44,12 +40,22 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="CHANGELOG.md" pinned="false" current-in-tab="false">
+          <file leaf-file-name="pubspec.yaml" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/pubspec.yaml">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="119">
+                  <caret line="7" column="12" lean-forward="false" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="CHANGELOG.md" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/CHANGELOG.md">
               <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
                 <state split_layout="SPLIT">
-                  <first_editor relative-caret-position="631">
-                    <caret line="133" column="1" lean-forward="false" selection-start-line="133" selection-start-column="1" selection-end-line="133" selection-end-column="1" />
+                  <first_editor relative-caret-position="665">
+                    <caret line="135" column="33" lean-forward="false" selection-start-line="135" selection-start-column="33" selection-end-line="135" selection-end-column="33" />
                     <folding />
                   </first_editor>
                   <second_editor>
@@ -63,14 +69,24 @@
       </split-first>
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="subscriptions_page.dart" pinned="false" current-in-tab="true">
+          <file leaf-file-name="subscriptions_page.dart" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/lib/views/subscriptions_page.dart">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="425">
-                  <caret line="25" column="1" lean-forward="true" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
+                  <caret line="25" column="1" lean-forward="false" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
                   <folding>
                     <element signature="e#0#39#0" expanded="true" />
                   </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="profile.dart" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/lib/models/profile.dart">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="289">
+                  <caret line="17" column="5" lean-forward="false" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -141,7 +157,6 @@
         <option value="$PROJECT_DIR$/lib/validators/user_validator.dart" />
         <option value="$PROJECT_DIR$/lib/services/subscription_service.dart" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/pubspec.yaml" />
         <option value="$PROJECT_DIR$/lib/views/about_page.dart" />
         <option value="$PROJECT_DIR$/lib/main.dart" />
         <option value="$PROJECT_DIR$/lib/views/charity_details_page.dart" />
@@ -153,13 +168,14 @@
         <option value="$PROJECT_DIR$/lib/models/player.dart" />
         <option value="$PROJECT_DIR$/lib/views/players_page.dart" />
         <option value="$PROJECT_DIR$/lib/services/auth_service.dart" />
-        <option value="$PROJECT_DIR$/lib/models/profile.dart" />
         <option value="$PROJECT_DIR$/lib/views/subscriptions_page.dart" />
         <option value="$PROJECT_DIR$/lib/views/home_page.dart" />
         <option value="$PROJECT_DIR$/lib/util/themes.dart" />
         <option value="$PROJECT_DIR$/lib/views/matches_page.dart" />
-        <option value="$PROJECT_DIR$/CHANGELOG.md" />
+        <option value="$PROJECT_DIR$/pubspec.yaml" />
+        <option value="$PROJECT_DIR$/lib/models/profile.dart" />
         <option value="$PROJECT_DIR$/lib/views/profile_page.dart" />
+        <option value="$PROJECT_DIR$/CHANGELOG.md" />
       </list>
     </option>
   </component>
@@ -205,7 +221,12 @@
               <item name="gfg_mobile" type="b2602c69:ProjectViewProjectNode" />
               <item name="gfg_mobile" type="462c0819:PsiDirectoryNode" />
               <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="models" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gfg_mobile" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gfg_mobile" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -360,13 +381,14 @@
     <layout>
       <window_info id="Android Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32930845" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33043477" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Dart Analysis" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.12934783" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22173913" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18043478" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32717392" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Flutter Outline" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -386,7 +408,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33043477" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
     </layout>
@@ -651,14 +672,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pubspec.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="56" lean-forward="false" selection-start-line="25" selection-start-column="56" selection-end-line="25" selection-end-column="56" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/views/charity_details_page.dart">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="456">
@@ -690,7 +703,7 @@
         <state relative-caret-position="216">
           <caret line="53" column="22" lean-forward="false" selection-start-line="53" selection-start-column="22" selection-end-line="53" selection-end-column="22" />
           <folding>
-            <element signature="e#0#39#0" expanded="true" />
+            <element signature="e#0#39#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -709,14 +722,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
           <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/models/profile.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="86" lean-forward="false" selection-start-line="8" selection-start-column="86" selection-end-line="8" selection-end-column="86" />
           <folding />
         </state>
       </provider>
@@ -758,7 +763,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="30" />
           <folding>
-            <element signature="e#0#30#0" expanded="true" />
+            <element signature="e#0#30#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -768,7 +773,7 @@
         <state relative-caret-position="1269">
           <caret line="89" column="1" lean-forward="false" selection-start-line="89" selection-start-column="1" selection-end-line="89" selection-end-column="1" />
           <folding>
-            <element signature="e#0#39#0" expanded="true" />
+            <element signature="e#0#39#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -786,7 +791,7 @@
         <state relative-caret-position="289">
           <caret line="17" column="54" lean-forward="false" selection-start-line="17" selection-start-column="54" selection-end-line="17" selection-end-column="54" />
           <folding>
-            <element signature="e#0#39#0" expanded="true" />
+            <element signature="e#0#39#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -799,36 +804,52 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CHANGELOG.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="631">
-            <caret line="133" column="1" lean-forward="false" selection-start-line="133" selection-start-column="1" selection-end-line="133" selection-end-column="1" />
-            <folding />
-          </first_editor>
-          <second_editor>
-            <markdownNavigatorState />
-          </second_editor>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/views/subscriptions_page.dart">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
-          <caret line="25" column="1" lean-forward="true" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
+          <caret line="25" column="1" lean-forward="false" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pubspec.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="12" lean-forward="false" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/models/profile.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="5" lean-forward="false" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/views/profile_page.dart">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="453">
-          <caret line="71" column="9" lean-forward="true" selection-start-line="71" selection-start-column="9" selection-end-line="71" selection-end-column="9" />
+        <state relative-caret-position="545">
+          <caret line="95" column="23" lean-forward="true" selection-start-line="95" selection-start-column="23" selection-end-line="95" selection-end-column="23" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CHANGELOG.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="665">
+            <caret line="135" column="33" lean-forward="false" selection-start-line="135" selection-start-column="33" selection-end-line="135" selection-end-column="33" />
+            <folding />
+          </first_editor>
+          <second_editor>
+            <markdownNavigatorState />
+          </second_editor>
         </state>
       </provider>
     </entry>

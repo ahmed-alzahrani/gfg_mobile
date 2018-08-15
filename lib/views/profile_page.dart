@@ -18,6 +18,7 @@ class ProfilePageWidgetState extends State<ProfilePage> {
 
   @override
   void initState() {
+    _getProfile();
     auth.currentUser();
     super.initState();
   }
@@ -35,7 +36,7 @@ class ProfilePageWidgetState extends State<ProfilePage> {
             )
           ),
             onPressed: () {
-              _getProfile();
+              _showProfile();
             }
         ),
       ),
@@ -72,9 +73,28 @@ class ProfilePageWidgetState extends State<ProfilePage> {
     try {
       String url = 'http://10.0.2.2:8080/profile/' + uid;
       final response = await dio.get(url);
-      print(response.data);
+
+      List<Goal> goals = new List();
+      for (int i = 0; i < response.data['stats']['allGoals'].length; i++) {
+        String charityName = response.data['stats']['allGoals'][i]['charityName'];
+        String charity = response.data['stats']['allGoals'][i]['charity'];
+        String player = response.data['stats']['allGoals'][i]['player'];
+        String playerName = response.data['stats']['allGoals'][i]['playerName'];
+        String teamName = response.data['stats']['allGoals'][i]['charityName'];
+        String team = response.data['stats']['allGoals'][i]['charityName'];
+        String time = response.data['stats']['allGoals'][i]['charityName'];
+        Goal goal = new Goal(charityName, charity, player, playerName, teamName, team, time);
+        goals.add(goal);
+      }
+      UserStats stats = new UserStats(response.data['stats']['topScorer'], goals, response.data['stats']['charities'], response.data['stats']['topCharity'], response.data['stats']['scorers'], response.data['stats']['goals']);
+      user = new Profile(response.data['birthday'], response.data['country'], response.data['email'], response.data['first'], response.data['last'], stats);
     } catch (error) {
       throw '$error';
     }
   }
+
+  void _showProfile() {
+    print(user.email);
+  }
+
 }

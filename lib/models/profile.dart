@@ -12,9 +12,9 @@ class Profile {
 class UserStats {
   String topScorer;
   List<Goal> allGoals;
-  List<String> charities;
+  List<dynamic> charities;
   String topCharity;
-  List<String> scorers;
+  List<dynamic> scorers;
   int goals;
 
   UserStats(this.topScorer, this.allGoals, this.charities, this.topCharity, this.scorers, this.goals);
