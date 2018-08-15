@@ -1,26 +1,29 @@
 import 'package:flutter/material.dart';
 import 'package:gfg_mobile/util/themes.dart';
-import 'package:gfg_mobile/services/auth_service.dart';
 
-class MatchesPage extends StatelessWidget{
-  final auth = new AuthService();
+class MatchesPage extends StatefulWidget {
+  @override
+  State<StatefulWidget> createState() => MatchesPageWidgetState();
+}
+
+class MatchesPageWidgetState extends State<MatchesPage> {
   final theme = new Themes();
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        leading: new IconButton(
+          icon: theme.backIcon,
+          onPressed: () => Navigator.of(context).pop(),
+        ),
         title: Text(
-          'Matches',
+          'My Matches',
           style: theme.textStyle,
         ),
-        actions: <Widget>[
-          new FlatButton(
-            child: theme.logout,
-            onPressed: auth.signOut,
-          )
-        ],
         centerTitle: true,
       ),
     );
   }
 }
+

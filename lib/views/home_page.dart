@@ -3,8 +3,9 @@ import 'package:gfg_mobile/services/auth_service.dart';
 import 'profile_page.dart';
 import 'players_page.dart';
 import 'charities_page.dart';
-import 'matches_page.dart';
+import 'subscriptions_page.dart';
 import 'about_page.dart';
+import 'package:gfg_mobile/util/themes.dart';
 
 class HomePage extends StatefulWidget {
 
@@ -22,18 +23,14 @@ class HomePageWidgetState extends State<HomePage> {
   int _currentIndex = 0;
   List<Widget> pages = List();
   final AuthService auth = new AuthService();
-
-  final _textColor = Colors.limeAccent[700];
-  final _textStyle = new TextStyle(
-    color: Colors.limeAccent[700],
-  );
+  final theme = new Themes();
 
   @override
   void initState() {
     pages.add(ProfilePage());
     pages.add(PlayersPage());
     pages.add(CharitiesPage());
-    pages.add(MatchesPage());
+    pages.add(SubscriptionsPage());
     pages.add(AboutPage());
     super.initState();
   }
@@ -49,49 +46,34 @@ class HomePageWidgetState extends State<HomePage> {
         child: new BottomNavigationBar(
           items: [
             BottomNavigationBarItem(
-                icon: Icon(
-                  Icons.account_circle,
-                  color: _textColor,
-                ),
+                icon: theme.profileIcon,
                 title: Text(
                     'Profile',
-                    style: _textStyle,
+                    style: theme.textStyle,
                 )),
             BottomNavigationBarItem(
-                icon: Icon(
-                  Icons.face,
-                  color: _textColor,
-                ),
+                icon: theme.playersIcon,
                 title: Text(
                   'Players',
-                  style: _textStyle,
+                  style: theme.textStyle,
                 )),
             BottomNavigationBarItem(
-                icon: Icon(
-                  Icons.favorite,
-                  color: _textColor,
-                ),
+                icon: theme.charityIcon,
                 title: Text(
                     'Charities',
-                    style: _textStyle,
+                    style: theme.textStyle,
                 )),
             BottomNavigationBarItem(
-                icon: Icon(
-                  Icons.calendar_today,
-                  color: _textColor,
-                ),
+                icon: theme.subsIcon,
                 title: Text(
-                  'My Matches',
-                  style: _textStyle,
+                  'Subscriptions',
+                  style: theme.textStyle,
                 )),
             BottomNavigationBarItem(
-                icon: Icon(
-                  Icons.text_format,
-                  color: _textColor,
-                ),
+                icon: theme.aboutIcon,
                 title: Text(
                   'About',
-                  style: _textStyle,
+                  style: theme.textStyle,
                 )),
           ],
           currentIndex: _currentIndex,
@@ -106,31 +88,3 @@ class HomePageWidgetState extends State<HomePage> {
     );
   }
 }
-
-/*
-bottomNavigationBar: new Theme(
-  data: Theme.of(context).copyWith(
-    // sets the background color of the `BottomNavigationBar`
-    canvasColor: Colors.green,
-    // sets the active color of the `BottomNavigationBar` if `Brightness` is light
-    primaryColor: Colors.red,
-    textTheme: Theme
-      .of(context)
-      .textTheme
-      .copyWith(caption: new TextStyle(color: Colors.yellow))), // sets the inactive color of the `BottomNavigationBar`
-  child: new BottomNavigationBar(
-    type: BottomNavigationBarType.fixed,
-    currentIndex: 0,
-    items: [
-      new BottomNavigationBarItem(
-        icon: new Icon(Icons.add),
-        title: new Text("Add"),
-      ),
-      new BottomNavigationBarItem(
-        icon: new Icon(Icons.delete),
-        title: new Text("Delete"),
-       )
-      ],
-    ),
-),
-*/

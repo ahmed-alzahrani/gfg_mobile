@@ -164,7 +164,7 @@ class PlayersPageState extends State<PlayersPage>{
     int yellowCards = int.parse(filteredPlayers[index]['yellowcards']);
     int redCards = int.parse(filteredPlayers[index]['redcards']);
 
-    Stats stats = new Stats(appearences, goals, assits, yellowCards, redCards);
+    PlayerStats stats = new PlayerStats(appearences, goals, assits, yellowCards, redCards);
     Player player = new Player(id, name, age, position, team, teamName, league, number, injured, stats);
 
     Navigator.push(

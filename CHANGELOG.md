@@ -118,3 +118,17 @@ __14/08/18__
 - Added search bar to charities page
 
 - Fixed keyboard overflow in players and charities page by setting resizeToAvoidBottomPadding to false in the scaffold on each page
+
+__15/08/18__
+
+- Swapped Subscriptions page for My Matches so Subscriptions is a main page in the bottom tab bar controller and Matches is reachable through user profile
+
+- Set up navigation in between Profile and Matches
+
+- Set up retrieval of Profile information from the server using current user uid
+
+- Added Models for Profile / Stats / Goal to work with incoming profile information from Firestore
+
+- Added all icons to theme and took them off home page
+
+-
