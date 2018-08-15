@@ -134,3 +134,11 @@ __15/08/18__
 - Now incoming request for usr profile info successfully serializes the response.data into a Profile object
 
 - Tweaked typing in Profile class
+
+- Implemented Subscriptions page as a searchable page of subscriptions by charity or player name
+
+- Setup mock About Page with Lorem Ipsum un-formatted text
+
+- Profile Page has been started, although currently the form collapses whenever the keyboard is opened
+
+-

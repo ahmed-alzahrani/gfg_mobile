@@ -24,6 +24,13 @@ class Themes {
     ),
   );
 
+  Widget subscriptionsBarTitle = new Text(
+    'Subscriptions',
+    style: new TextStyle(
+      color: Colors.limeAccent[700],
+    ),
+  );
+
   Icon profileIcon = new Icon(Icons.account_circle, color: Colors.limeAccent[700],);
   Icon playersIcon = new Icon(Icons.face, color: Colors.limeAccent[700],);
   Icon charityIcon = new Icon(Icons.favorite, color: Colors.limeAccent[700],);

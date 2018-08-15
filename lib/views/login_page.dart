@@ -99,12 +99,14 @@ class _LoginPageState extends State<LoginPage> {
   List<Widget> buildTextFields() {
     return [
       new TextFormField(
-        decoration: new InputDecoration(labelText: 'Email'),
+        style: theme.textStyle,
+        decoration: new InputDecoration(labelText: 'Email', labelStyle: theme.textStyle),
         validator: (value) => validate.isEmailAddressValid(value) ? null : 'Invalid E-mail',
         onSaved: (value) => _email = value,
       ),
       new TextFormField(
-        decoration: new InputDecoration(labelText: 'Password'),
+        style: theme.textStyle,
+        decoration: new InputDecoration(labelText: 'Password', labelStyle: theme.textStyle),
         validator: (value) => validate.isPasswordValid(value) ? null : 'Invalid Password',
         onSaved: (value) => _password = value,
         obscureText: true,

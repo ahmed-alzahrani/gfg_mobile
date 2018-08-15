@@ -13,7 +13,6 @@ class PlayersPage extends StatefulWidget {
 }
 
 class PlayersPageState extends State<PlayersPage>{
-  final formKey = new GlobalKey<FormState>();
   final data = new DataService();
   final auth = new AuthService();
   final theme = new Themes();

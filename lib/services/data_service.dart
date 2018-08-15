@@ -1,12 +1,14 @@
 import 'package:dio/dio.dart';
 import 'dart:async';
 import'package:firebase_auth/firebase_auth.dart';
+import 'package:gfg_mobile/services/auth_service.dart';
 
 class DataService {
   DataService();
 
   final FirebaseAuth auth = FirebaseAuth.instance;
   final dio = new Dio();
+  final authService = new AuthService();
 
   Future<List> allPlayers () async {
     try {
@@ -55,6 +57,19 @@ class DataService {
   Future<List> playerMatches (teamId) async {
     try {
       final url = 'http://10.0.2.2:8080/playerMatches/' + teamId;
+      final response = await dio.get(url);
+      return response.data;
+    } catch (error) {
+      print("error: $error");
+      return [];
+    }
+  }
+
+  Future<List> subscriptions() async {
+    // make a call to the localServer at /subscriptions/:userId
+    final uid = await authService.currentUser();
+    try{
+      final url = 'http://10.0.2.2:8080/subscriptions/' + uid;
       final response = await dio.get(url);
       return response.data;
     } catch (error) {

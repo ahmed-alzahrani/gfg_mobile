@@ -14,6 +14,13 @@ class ProfilePageWidgetState extends State<ProfilePage> {
   final theme = new Themes();
   final dio = new Dio();
   Profile user;
+  String _first = "";
+  final firstController = TextEditingController();
+  String _last = "";
+  final lastController = TextEditingController();
+  String _email = "";
+  String _birthday = "";
+  String _country = "";
 
 
   @override
@@ -24,22 +31,19 @@ class ProfilePageWidgetState extends State<ProfilePage> {
   }
 
   @override
+  void dispose() {
+    firstController.dispose();
+    super.dispose();
+  }
+
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: _buildBar(context),
-      body: new Container(
-        child: new RaisedButton(
-          child: new Text(
-            'press',
-            style: new TextStyle(
-              color: theme.textColor,
-            )
-          ),
-            onPressed: () {
-              _showProfile();
-            }
-        ),
+      body: new Column(
+        children: _buildForm(),
       ),
+      resizeToAvoidBottomPadding: true,
     );
   }
 
@@ -68,6 +72,61 @@ class ProfilePageWidgetState extends State<ProfilePage> {
     );
   }
 
+  List<Widget> _buildForm() {
+    return [
+      new Flexible(
+        child: new ListTile(
+          leading: new Text(
+            'First',
+            style: theme.textStyle,
+          ),
+          title: new TextField(
+            controller: firstController,
+            decoration: new InputDecoration(
+              hintText: _first,
+              hintStyle: theme.textStyle,
+            ),
+          ),
+        ),
+      ),
+      new Flexible(
+        child: new ListTile(
+          leading: new Text(
+            'Last',
+            style: theme.textStyle,
+          ),
+          title: new TextField(
+            controller: lastController,
+            decoration: new InputDecoration(
+              hintText: _last,
+              hintStyle: theme.textStyle,
+            ),
+          ),
+        ),
+      ),
+      new Flexible(
+        child: new ListTile(
+          leading: new Text(
+            'E-mail',
+            style: theme.textStyle,
+          ),
+          title: new Text(
+            _email,
+            style: new TextStyle(
+              color: theme.textColor,
+            ),
+          ),
+        ),
+      ),
+      const Divider(
+        height: 1.0,
+      ),
+
+    ];
+  }
+
+
+
   void _getProfile() async {
     final uid = await auth.currentUser();
     try {
@@ -86,15 +145,22 @@ class ProfilePageWidgetState extends State<ProfilePage> {
         Goal goal = new Goal(charityName, charity, player, playerName, teamName, team, time);
         goals.add(goal);
       }
+
       UserStats stats = new UserStats(response.data['stats']['topScorer'], goals, response.data['stats']['charities'], response.data['stats']['topCharity'], response.data['stats']['scorers'], response.data['stats']['goals']);
-      user = new Profile(response.data['birthday'], response.data['country'], response.data['email'], response.data['first'], response.data['last'], stats);
+
+      setState(() {
+        _birthday = response.data['birthday'];
+        _country = response.data['country'];
+        _email = response.data['email'];
+        _first = response.data['first'];
+        _last = response.data['last'];
+        user = new Profile(_birthday, _country, _email, _first, _last, stats);
+
+      });
     } catch (error) {
       throw '$error';
     }
   }
 
-  void _showProfile() {
-    print(user.email);
-  }
 
 }
