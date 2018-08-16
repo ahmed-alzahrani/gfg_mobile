@@ -102,7 +102,6 @@ class SubscriptionsPageState extends State<SubscriptionsPage>{
   Future<void> _getSubscriptions () async {
     List allSubs = await data.subscriptions();
     setState(() {
-      print(allSubs);
       subscriptions = allSubs;
       subscriptions.shuffle();
       filteredSubscriptions = subscriptions;

@@ -150,3 +150,9 @@ __16/08/18__
 - Also added a button to delete subscriptions and re-navigate back to the Subscriptions page with the deleted subscription removed
 
 - Fixed case where user backs from sub details to subs after either editing the sub or leaving it alone
+
+- Added Matches Page showing the next month worth of matches the user has players featured in
+
+- Loading time for matches from back end is very slow, so i added in a circular progress indicator for the user so they understand it is loading
+
+- Added a new alert Dialog when the user clicks on a match in Matches, it shows them all the players they are subcribed to that are playing in that match

@@ -43,7 +43,7 @@ class DataService {
     }
   }
 
-  Future<List> getMatches () async {
+  Future<List> matches () async {
     try {
       final user = await auth.currentUser();
       final url = 'http://10.0.2.2:8080/matches/' + user.uid;
@@ -55,7 +55,7 @@ class DataService {
     }
   }
 
-  Future<List> playerMatches (teamId) async {
+  Future<List> playerMatches (String teamId) async {
     try {
       final url = 'http://10.0.2.2:8080/playerMatches/' + teamId;
       final response = await dio.get(url);
@@ -72,6 +72,24 @@ class DataService {
     try{
       final url = 'http://10.0.2.2:8080/subscriptions/' + uid;
       final response = await dio.get(url);
+      return response.data;
+    } catch (error) {
+      print("error: $error");
+      return [];
+    }
+  }
+
+  Future<List> participants(String localTeamId, String visitorTeamId) async {
+    final uid = await authService.currentUser();
+    try {
+      final url = 'http://10.0.2.2:8080/participants/' + uid;
+      Response response = await dio.post(
+        url,
+        data: {
+          'localTeamId': localTeamId,
+          'visitorTeamId': visitorTeamId,
+        }
+      );
       return response.data;
     } catch (error) {
       print("error: $error");
