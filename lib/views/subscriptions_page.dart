@@ -155,7 +155,7 @@ class SubscriptionsPageState extends State<SubscriptionsPage>{
     String time = filteredSubscriptions[index]['time'];
     Subscription sub = new Subscription(id, charity, charityId, goals, name, teamName, time);
 
-    final result = await Navigator.push(
+    bool result = await Navigator.push(
       context,
       MaterialPageRoute(builder: (context) => SubscriptionDetailsPage(sub))
     );

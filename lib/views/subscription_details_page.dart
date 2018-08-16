@@ -55,7 +55,7 @@ class SubscriptionDetailsPageWidgetState extends State<SubscriptionDetailsPage> 
     return new AppBar(
       leading: new IconButton(
         icon: theme.backIcon,
-        onPressed: () => Navigator.of(context).pop(),
+        onPressed: () => Navigator.of(context).pop(true),
       ),
       title: Text(
         'Subscription Details',

@@ -148,3 +148,5 @@ __16/08/18__
 - Added in a picker for the subscription details page to update a subscription that is already in place
 
 - Also added a button to delete subscriptions and re-navigate back to the Subscriptions page with the deleted subscription removed
+
+- Fixed case where user backs from sub details to subs after either editing the sub or leaving it alone
