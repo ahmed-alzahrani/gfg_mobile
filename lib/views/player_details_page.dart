@@ -50,18 +50,7 @@ class PlayerDetailsPageWidgetState extends State<PlayerDetailsPage> {
   @override
   Widget build(BuildContext context) {
     return new Scaffold(
-      appBar: AppBar(
-        leading: new IconButton(
-            icon: theme.backIcon,
-            onPressed: () => Navigator.of(context).pop(),
-        ),
-        title: Text(
-          '${player.name} #${player.number}',
-          style: theme.textStyle,
-        ),
-        centerTitle: true,
-        actions: _buildButton()
-      ),
+      appBar: _buildBar(context),
       body: new Container(
         child: new Column(
           children: [
@@ -72,6 +61,21 @@ class PlayerDetailsPageWidgetState extends State<PlayerDetailsPage> {
           ]
         ),
       )
+    );
+  }
+
+  Widget _buildBar(BuildContext context) {
+    return new AppBar(
+        leading: new IconButton(
+          icon: theme.backIcon,
+          onPressed: () => Navigator.of(context).pop(),
+        ),
+        title: Text(
+          '${player.name} #${player.number}',
+          style: theme.textStyle,
+        ),
+        centerTitle: true,
+        actions: _buildButton()
     );
   }
 

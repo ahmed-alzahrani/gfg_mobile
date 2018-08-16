@@ -4,6 +4,8 @@ import 'package:gfg_mobile/services/auth_service.dart';
 import 'package:gfg_mobile/services/data_service.dart';
 import'package:gfg_mobile/services/subscription_service.dart';
 import 'dart:async';
+import 'package:gfg_mobile/models/subscription.dart';
+import 'package:gfg_mobile/views/subscription_details_page.dart';
 
 class SubscriptionsPage extends StatefulWidget {
   SubscriptionsPage({ Key key }) : super(key: key);
@@ -137,16 +139,26 @@ class SubscriptionsPageState extends State<SubscriptionsPage>{
               style: theme.textStyle,
             ),
           ),
-          onTap: () => print('you tapped on $index'),
+          onTap: () => _subTapped(index),
         );
       },
     );
   }
 
-  void _unsubscribe(String player) async {
-    bool result = await sub.removeSubscription(player);
-    if (result) {
-      // subscription removed
-    }
+  void _subTapped(int index) {
+    String charity = filteredSubscriptions[index]['charity'];
+    String charityId = filteredSubscriptions[index]['charityId'];
+    int goals = filteredSubscriptions[index]['goals'];
+    String name = filteredSubscriptions[index]['name'];
+    String teamName = filteredSubscriptions[index]['teamName'];
+    String time = filteredSubscriptions[index]['time'];
+    Subscription sub = new Subscription(charity, charityId, goals, name, teamName, time);
+
+    Navigator.push(
+      context,
+      MaterialPageRoute(builder: (context) => SubscriptionDetailsPage(sub))
+    );
+
   }
+
 }
