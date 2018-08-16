@@ -207,7 +207,7 @@ class PlayerDetailsPageWidgetState extends State<PlayerDetailsPage> {
          }),
          hint: new Text(
            _selectedCharity ?? 'Select a Charity',
-           style: new TextStyle(color: theme.textColor),
+           style: theme.textStyle,
          ),
          onChanged: (value) {
            setState(() {

@@ -17,7 +17,6 @@ class HomePage extends StatefulWidget {
 }
 
 class HomePageWidgetState extends State<HomePage> {
-
   HomePageWidgetState(this.onSignedOut);
   final VoidCallback onSignedOut;
   int _currentIndex = 0;

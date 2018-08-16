@@ -142,3 +142,9 @@ __15/08/18__
 - Profile Page has been started, although currently the form collapses whenever the keyboard is opened
 
 - Added Subscription model and set up navigation to and from Subscription Details Page from Subscriptions
+
+__16/08/18__
+
+- Added in a picker for the subscription details page to update a subscription that is already in place
+
+- Also added a button to delete subscriptions and re-navigate back to the Subscriptions page with the deleted subscription removed

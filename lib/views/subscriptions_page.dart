@@ -145,19 +145,26 @@ class SubscriptionsPageState extends State<SubscriptionsPage>{
     );
   }
 
-  void _subTapped(int index) {
+  void _subTapped(int index) async {
+    String id = filteredSubscriptions[index]['id'];
     String charity = filteredSubscriptions[index]['charity'];
     String charityId = filteredSubscriptions[index]['charityId'];
     int goals = filteredSubscriptions[index]['goals'];
     String name = filteredSubscriptions[index]['name'];
     String teamName = filteredSubscriptions[index]['teamName'];
     String time = filteredSubscriptions[index]['time'];
-    Subscription sub = new Subscription(charity, charityId, goals, name, teamName, time);
+    Subscription sub = new Subscription(id, charity, charityId, goals, name, teamName, time);
 
-    Navigator.push(
+    final result = await Navigator.push(
       context,
       MaterialPageRoute(builder: (context) => SubscriptionDetailsPage(sub))
     );
+
+    if (result) {
+      setState(() {
+        this._getSubscriptions();
+      });
+    }
 
   }
 

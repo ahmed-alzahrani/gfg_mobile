@@ -35,6 +35,7 @@ class DataService {
   Future<List> charities () async {
     try {
       final response = await dio.get('http://10.0.2.2:8080/charities');
+      //print(response.data);
       return response.data;
     } catch (error) {
       print("error! $error");

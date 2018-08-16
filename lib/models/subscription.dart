@@ -1,4 +1,5 @@
 class Subscription {
+  String id;
   String charity;
   String charityId;
   int goals;
@@ -6,5 +7,5 @@ class Subscription {
   String teamName;
   String time;
 
-  Subscription(this.charity, this.charityId, this.goals, this.name, this.teamName, this.time);
+  Subscription(this.id, this.charity, this.charityId, this.goals, this.name, this.teamName, this.time);
 }

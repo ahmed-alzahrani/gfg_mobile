@@ -39,6 +39,7 @@ class Themes {
   Icon searchIcon = new Icon(Icons.search, color: Colors.limeAccent[700],);
   Icon backIcon = new Icon(Icons.arrow_back, color: Colors.limeAccent[700],);
   Icon matchesIcon = new Icon(Icons.calendar_today, color: Colors.limeAccent[700]);
+  Icon editIcon = new Icon(Icons.save, color: Colors.lime[700],);
 
   Text logout = new Text('Logout', style: new TextStyle(fontSize: 17.0, color: Colors.limeAccent[700]));
 }
