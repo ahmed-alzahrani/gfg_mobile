@@ -156,3 +156,15 @@ __16/08/18__
 - Loading time for matches from back end is very slow, so i added in a circular progress indicator for the user so they understand it is loading
 
 - Added a new alert Dialog when the user clicks on a match in Matches, it shows them all the players they are subcribed to that are playing in that match
+
+__17/08/18__
+
+- Finished form on Profile Page with text fields for First name, Last name, as well as functionality for:
+        - Email display
+        - Password reset
+        - TopScorer display
+        - TopCharity display
+        - Country code picker
+        - Submit button to update profile in Firestore
+
+- Work includes new func in DataService that updates through the backends

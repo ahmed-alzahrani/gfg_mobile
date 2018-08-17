@@ -43,6 +43,16 @@ class DataService {
     }
   }
 
+  Future<List> countries() async {
+    try {
+      final response = await dio.get('http://10.0.2.2:8080/countries');
+      return response.data;
+    } catch (error) {
+      print("error! $error");
+      return [];
+    }
+  }
+
   Future<List> matches () async {
     try {
       final user = await auth.currentUser();
@@ -94,6 +104,25 @@ class DataService {
     } catch (error) {
       print("error: $error");
       return [];
+    }
+  }
+
+  Future<bool> updateProfile (String first, String last, String country) async {
+    try {
+      final user = await auth.currentUser();
+      final url = 'http://10.0.2.2:8080/updateProfile/' + user.uid;
+      Response response = await dio.put(
+        url,
+        data: {
+          'first': first,
+          'last': last,
+          'country': country
+        }
+      );
+      return response.data['result'];
+    } catch (error) {
+      print('error: $error');
+      return false;
     }
   }
 }
