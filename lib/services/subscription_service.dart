@@ -50,7 +50,7 @@ class SubscriptionService {
   Future<bool> removeSubscription (String player) async {
     try {
       final user = await auth.currentUser();
-      Response response = await dio.post(
+      Response response = await dio.delete(
         'http://10.0.2.2:8080/unsubscribe',
         data: {
           'uid': user.uid,
@@ -67,7 +67,7 @@ class SubscriptionService {
   Future<bool> updateSubscription (String player, String charity, String charityId) async {
     try {
       final user = await auth.currentUser();
-      Response response = await dio.post(
+      Response response = await dio.put(
         'http://10.0.2.2:8080/updateSubscription',
         data: {
           'uid': user.uid,

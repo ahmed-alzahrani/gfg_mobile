@@ -168,3 +168,8 @@ __17/08/18__
         - Submit button to update profile in Firestore
 
 - Work includes new func in DataService that updates through the backends
+
+
+__20/08/18__
+
+- Updated REST methods of updateSubscription (post --> put) and removeSubscription (post --> delete)

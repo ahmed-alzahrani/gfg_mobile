@@ -5,9 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="67c8fb9b-f652-4b7d-83ce-bd062c2407dd" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/CHANGELOG.md" afterPath="$PROJECT_DIR$/CHANGELOG.md" />
-      <change beforePath="$PROJECT_DIR$/lib/services/data_service.dart" afterPath="$PROJECT_DIR$/lib/services/data_service.dart" />
-      <change beforePath="$PROJECT_DIR$/lib/views/profile_page.dart" afterPath="$PROJECT_DIR$/lib/views/profile_page.dart" />
+      <change beforePath="$PROJECT_DIR$/lib/services/subscription_service.dart" afterPath="$PROJECT_DIR$/lib/services/subscription_service.dart" />
     </list>
     <ignored path="$PROJECT_DIR$/.dart_tool/" />
     <ignored path="$PROJECT_DIR$/.idea/" />
@@ -21,14 +21,14 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.6262953">
+    <splitter split-orientation="horizontal" split-proportion="0.6638601">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="profile_page.dart" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/lib/views/profile_page.dart">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1712">
-                  <caret line="297" column="22" lean-forward="false" selection-start-line="297" selection-start-column="22" selection-end-line="297" selection-end-column="22" />
+                <state relative-caret-position="420">
+                  <caret line="293" column="35" lean-forward="false" selection-start-line="293" selection-start-column="29" selection-end-line="293" selection-end-column="35" />
                   <folding>
                     <element signature="e#0#39#0" expanded="true" />
                   </folding>
@@ -41,7 +41,7 @@
               <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
                 <state split_layout="SPLIT">
                   <first_editor relative-caret-position="675">
-                    <caret line="169" column="73" lean-forward="false" selection-start-line="169" selection-start-column="73" selection-end-line="169" selection-end-column="73" />
+                    <caret line="174" column="100" lean-forward="false" selection-start-line="174" selection-start-column="100" selection-end-line="174" selection-end-column="100" />
                     <folding />
                   </first_editor>
                   <second_editor>
@@ -55,11 +55,11 @@
       </split-first>
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="data_service.dart" pinned="false" current-in-tab="true">
+          <file leaf-file-name="data_service.dart" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/lib/services/data_service.dart">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="351">
-                  <caret line="101" column="8" lean-forward="true" selection-start-line="101" selection-start-column="8" selection-end-line="101" selection-end-column="8" />
+                <state relative-caret-position="395">
+                  <caret line="113" column="39" lean-forward="false" selection-start-line="113" selection-start-column="36" selection-end-line="113" selection-end-column="39" />
                   <folding>
                     <element signature="e#0#30#0" expanded="true" />
                   </folding>
@@ -67,11 +67,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="subscription_service.dart" pinned="false" current-in-tab="false">
+          <file leaf-file-name="subscription_service.dart" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/lib/services/subscription_service.dart">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="154">
-                  <caret line="64" column="3" lean-forward="true" selection-start-line="64" selection-start-column="3" selection-end-line="64" selection-end-column="3" />
+                <state relative-caret-position="517">
+                  <caret line="69" column="39" lean-forward="false" selection-start-line="69" selection-start-column="39" selection-end-line="69" selection-end-column="39" />
                   <folding />
                 </state>
               </provider>
@@ -122,9 +122,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>buildBUtton</find>
-      <find>onTap</find>
-      <find>paddin</find>
       <find>Subscribed</find>
       <find>Select a</find>
       <find>_selectedCharity</find>
@@ -152,6 +149,9 @@
       <find>onpre</find>
       <find>post</find>
       <find>submitPre</find>
+      <find>put</find>
+      <find>unsub</find>
+      <find>update</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -173,7 +173,6 @@
         <option value="$PROJECT_DIR$/lib/views/root_page.dart" />
         <option value="$PROJECT_DIR$/lib/services/util_service.dart" />
         <option value="$PROJECT_DIR$/lib/validators/user_validator.dart" />
-        <option value="$PROJECT_DIR$/lib/services/subscription_service.dart" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/lib/views/charity_details_page.dart" />
         <option value="$PROJECT_DIR$/lib/models/charity.dart" />
@@ -197,13 +196,14 @@
         <option value="$PROJECT_DIR$/lib/views/matches_page.dart" />
         <option value="$PROJECT_DIR$/lib/services/data_service.dart" />
         <option value="$PROJECT_DIR$/lib/views/profile_page.dart" />
+        <option value="$PROJECT_DIR$/lib/services/subscription_service.dart" />
         <option value="$PROJECT_DIR$/CHANGELOG.md" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="13" />
+    <option name="x" value="219" />
+    <option name="y" value="185" />
     <option name="width" value="1532" />
     <option name="height" value="1034" />
   </component>
@@ -238,6 +238,12 @@
               <item name="gfg_mobile" type="b2602c69:ProjectViewProjectNode" />
               <item name="gfg_mobile" type="462c0819:PsiDirectoryNode" />
               <item name="lib" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gfg_mobile" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gfg_mobile" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -825,28 +831,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/services/subscription_service.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="64" column="3" lean-forward="true" selection-start-line="64" selection-start-column="3" selection-end-line="64" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/services/data_service.dart">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="101" column="8" lean-forward="true" selection-start-line="101" selection-start-column="8" selection-end-line="101" selection-end-column="8" />
+        <state relative-caret-position="395">
+          <caret line="113" column="39" lean-forward="false" selection-start-line="113" selection-start-column="36" selection-end-line="113" selection-end-column="39" />
           <folding>
             <element signature="e#0#30#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/lib/services/subscription_service.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="517">
+          <caret line="69" column="39" lean-forward="false" selection-start-line="69" selection-start-column="39" selection-end-line="69" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/lib/views/profile_page.dart">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1712">
-          <caret line="297" column="22" lean-forward="false" selection-start-line="297" selection-start-column="22" selection-end-line="297" selection-end-column="22" />
+        <state relative-caret-position="420">
+          <caret line="293" column="35" lean-forward="false" selection-start-line="293" selection-start-column="29" selection-end-line="293" selection-end-column="35" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>
@@ -857,7 +863,7 @@
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="675">
-            <caret line="169" column="73" lean-forward="false" selection-start-line="169" selection-start-column="73" selection-end-line="169" selection-end-column="73" />
+            <caret line="174" column="100" lean-forward="false" selection-start-line="174" selection-start-column="100" selection-end-line="174" selection-end-column="100" />
             <folding />
           </first_editor>
           <second_editor>
