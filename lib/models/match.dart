@@ -1,3 +1,4 @@
+// Models incoming Match information from the GFG-Webapp server
 class Match{
   String id;
   String compId;

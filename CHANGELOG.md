@@ -173,3 +173,9 @@ __17/08/18__
 __20/08/18__
 
 - Updated REST methods of updateSubscription (post --> put) and removeSubscription (post --> delete)
+
+- Added commenting for all Models, Services, Util, and Views
+
+- Removed FirebaseAuth as a dependency in data_service & subscription_service, all queries for current user uid is routed through auth_service
+
+-

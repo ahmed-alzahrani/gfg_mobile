@@ -1,3 +1,4 @@
+// Models the player information coming in from the GFG-Webapp server
 class Player {
   String id;
   String name;

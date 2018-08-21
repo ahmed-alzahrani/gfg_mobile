@@ -16,14 +16,15 @@ class PlayersPageState extends State<PlayersPage>{
   final data = new DataService();
   final auth = new AuthService();
   final theme = new Themes();
-  final key = new GlobalKey<ScaffoldState>();
-  final TextEditingController _filter = new TextEditingController();
-  List players = new List();
-  List filteredPlayers = new List();
+  final key = new GlobalKey<ScaffoldState>(); // Key for the search bar
+  final TextEditingController _filter = new TextEditingController(); // allows us to check the text in the search bar to filter the players list
+  List players = new List(); // list of all players
+  List filteredPlayers = new List(); // list of players filtered based on user input
   Widget _appBarTitle;
   Icon _searchIcon;
   String _searchText = "";
 
+  // 0 param constructor that sets the state of the search text based on whether or not the user has input a search query
   PlayersPageState() {
     _filter.addListener(() {
       if (_filter.text.isEmpty) {
@@ -41,6 +42,7 @@ class PlayersPageState extends State<PlayersPage>{
   }
 
 
+  // retrieve theme info on startup and get players from backend
   @override
   void initState() {
     _searchIcon = theme.searchIcon;
@@ -60,6 +62,7 @@ class PlayersPageState extends State<PlayersPage>{
     );
   }
 
+  // build the bar with the search bar in it if the search icon is clicked
   Widget buildBar(BuildContext context) {
     return new AppBar(
       centerTitle: true,
@@ -93,6 +96,7 @@ class PlayersPageState extends State<PlayersPage>{
     );
   }
 
+  // reset to default state
   _searchEnd() {
     setState(() {
       this._searchIcon = theme.searchIcon;
@@ -102,6 +106,7 @@ class PlayersPageState extends State<PlayersPage>{
     });
   }
 
+  // returns a promise that resolves to a list of players available to subscribe to
   Future<void> _getPlayers() async {
     List allPlayers = await data.allPlayers();
     this.setState(() {
@@ -109,9 +114,9 @@ class PlayersPageState extends State<PlayersPage>{
       players.shuffle();
       filteredPlayers = players;
     });
-    return;
   }
 
+  // converts the players list we retrieved into the actual individual List Tiles populating the list view
   Widget _buildPlayers() {
     if (!(_searchText.isEmpty)) {
       List tempList = new List();
@@ -147,6 +152,7 @@ class PlayersPageState extends State<PlayersPage>{
     );
   }
 
+  // constructs the Player information based on the tile tap and passes that to the Navigator to bring up the PlayerDetailsPage
   void _playerTapped(int index) {
     String id = filteredPlayers[index]['id'];
     String name = filteredPlayers[index]['name'];

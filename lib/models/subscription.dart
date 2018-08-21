@@ -1,3 +1,4 @@
+// Models a subscription a User holds in the Firebase Firestore
 class Subscription {
   String id;
   String charity;

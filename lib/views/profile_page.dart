@@ -11,11 +11,11 @@ class ProfilePage extends StatefulWidget {
 }
 
 class ProfilePageWidgetState extends State<ProfilePage> {
-  GlobalKey<FormState> _key = new GlobalKey();
+  GlobalKey<FormState> _key = new GlobalKey(); // key used for user changing their name information
   final auth = new AuthService();
   final theme = new Themes();
   final data = new DataService();
-  final dio = new Dio();
+  final dio = new Dio(); // dio for our REST requests
   Profile user;
   String _first = "";
   String _last = "";
@@ -28,6 +28,7 @@ class ProfilePageWidgetState extends State<ProfilePage> {
   final _lastController = TextEditingController();
   List countries = new List();
 
+  // get our profile and the list of countries from the server on init
   @override
   void initState() {
     _getProfile();
@@ -35,6 +36,7 @@ class ProfilePageWidgetState extends State<ProfilePage> {
     super.initState();
   }
 
+  // cleanse controllers on dispose
   @override
   void dispose() {
     _firstController.dispose();
@@ -61,7 +63,7 @@ class ProfilePageWidgetState extends State<ProfilePage> {
 
   Widget _buildBar(BuildContext context) {
     return new AppBar (
-      leading: new IconButton(
+      leading: new IconButton( // leading Matches icon brings us to the user's matches page
         icon: theme.matchesIcon,
         onPressed: () {
           Navigator.push(
@@ -70,10 +72,7 @@ class ProfilePageWidgetState extends State<ProfilePage> {
           );
         },
       ),
-      title: new Text(
-        'Profile',
-        style: theme.textStyle,
-      ),
+      title: theme.profileBarTitle,
       actions: <Widget>[
         new FlatButton(
           child: theme.logout,

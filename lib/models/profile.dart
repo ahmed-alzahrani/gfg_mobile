@@ -1,3 +1,4 @@
+// Models a User's Profile in Firebase Firestore
 class Profile {
   String birthday;
   String country;

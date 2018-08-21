@@ -6,6 +6,7 @@ import 'package:gfg_mobile/services/auth_service.dart';
 import 'package:gfg_mobile/models/charity.dart';
 import 'package:gfg_mobile/util/themes.dart';
 
+// Stateful Widget because we want to update on a user's search input
 class CharitiesPage extends StatefulWidget {
   CharitiesPage({ Key key }) : super(key: key);
   @override
@@ -13,18 +14,19 @@ class CharitiesPage extends StatefulWidget {
 }
 
 class CharitiesPageState extends State<CharitiesPage> {
-  final formKey = new GlobalKey<FormState>();
+  final formKey = new GlobalKey<FormState>();  // formKey for the search bar
   final auth = new AuthService();
   final data = new DataService();
   final theme = new Themes();
   final key = new GlobalKey<ScaffoldState>();
-  final TextEditingController _filter = new TextEditingController();
-  List charities = new List();
-  List filteredCharities = new List();
+  final TextEditingController _filter = new TextEditingController(); // holds the user input from the text field in real time
+  List charities = new List(); // list of all charities
+  List filteredCharities = new List(); // list of charities to be displayed currently as filtered by user search input
   Widget _appBarTitle;
   Icon _searchIcon;
   String _searchText = "";
 
+  // replaces default constructor and sets the state such that the text editing controller is listening and updating our search text string in real time
   CharitiesPageState() {
     _filter.addListener(() {
       if (_filter.text.isEmpty) {
@@ -40,6 +42,7 @@ class CharitiesPageState extends State<CharitiesPage> {
     });
   }
 
+  // on initialization, set up the scaffold based on theme information and get the charities from the server
   @override
   void initState(){
     _searchIcon = theme.searchIcon;
@@ -50,19 +53,19 @@ class CharitiesPageState extends State<CharitiesPage> {
 
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: buildBar(context),
+      appBar: _buildBar(context),
       body: Container(
         child: _buildCharities(),
       ),
-      resizeToAvoidBottomPadding: false,
+      resizeToAvoidBottomPadding: false, // prevents keyboard padding from obscuring scaffold while open
     );
   }
 
-  Widget buildBar(BuildContext context) {
+  Widget _buildBar(BuildContext context) {
     return new AppBar(
       centerTitle: true,
       title: _appBarTitle,
-      leading: new IconButton(icon: _searchIcon, onPressed: () {
+      leading: new IconButton(icon: _searchIcon, onPressed: () { // search icon that adds a search bar in the app bar on tap, or closes it if opened
         setState(() {
           if (this._searchIcon.icon == Icons.search) {
             this._searchIcon = new Icon(Icons.close, color: theme.textColor,);
@@ -91,6 +94,7 @@ class CharitiesPageState extends State<CharitiesPage> {
     );
   }
 
+  // reset to default page settings
   _searchEnd() {
     setState(() {
       this._searchIcon = theme.searchIcon;
@@ -100,6 +104,7 @@ class CharitiesPageState extends State<CharitiesPage> {
     });
   }
 
+  // gets the charities from the server through data service then updates the state of the widget to build with the charities
   Future<void> _getCharities() async {
     List allCharities = await data.charities();
     this.setState((){
@@ -107,9 +112,9 @@ class CharitiesPageState extends State<CharitiesPage> {
       charities.shuffle();
       filteredCharities = allCharities;
     });
-    return;
   }
 
+  // actually constructs the ListTiles, 1 for each charity returned from the backend
   Widget _buildCharities() {
     if (!(_searchText.isEmpty)) {
       List tempList = new List();
@@ -145,6 +150,8 @@ class CharitiesPageState extends State<CharitiesPage> {
     );
   }
 
+  // builds the charity object based on the JSON from the server and then pushes the detailed charity page onto the top of the navigator for the user
+  // TODO: build a map function?? is there already a built in map function?
   void _charityTapped(int index) {
     String name = filteredCharities[index]['name'];
     String id = filteredCharities[index]['id'];

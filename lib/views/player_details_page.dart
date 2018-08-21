@@ -6,13 +6,14 @@ import 'package:flutter/cupertino.dart';
 import 'package:gfg_mobile/util/themes.dart';
 
 class PlayerDetailsPage extends StatefulWidget {
-  PlayerDetailsPage(this.player);
+  PlayerDetailsPage(this.player); // the player based on which the page is being built
   final Player player;
 
   @override
   State<StatefulWidget> createState() => PlayerDetailsPageWidgetState(player);
 }
 
+// whether or not the player were looking at is one we're subbed to or not
 enum subscribed {
   subbed,
   notSubbed
@@ -25,17 +26,18 @@ class PlayerDetailsPageWidgetState extends State<PlayerDetailsPage> {
   final data = new DataService();
   final theme = new Themes();
   subscribed _subbed;
-  List charities = [];
-  int _selectedIndex = -1;
+  List charities = []; // charities to populate the picker
+  int _selectedIndex = -1; // initialize it such that no charity has been selected
   String _selectedCharity;
 
   @override
   void initState() {
-    _setSubscriptionStatus();
+    _setSubscriptionStatus(); // find out if user is subscribed on init
     super.initState();
   }
 
   void _setSubscriptionStatus() async {
+    // make our two async calls the first to check subscription the second to populate charities
     bool result = await sub.checkSubscription(player.id);
     charities = await data.charities();
     setState(() {
@@ -79,6 +81,7 @@ class PlayerDetailsPageWidgetState extends State<PlayerDetailsPage> {
     );
   }
 
+  // first row consists of age and position info on the player
   Widget _buildFirstRow() {
     return new Container(
       child: new Row(
@@ -104,6 +107,7 @@ class PlayerDetailsPageWidgetState extends State<PlayerDetailsPage> {
     );
   }
 
+  // second row consists of the team name and league info
   Widget _buildSecondRow() {
     return new Container(
       child: new Row(
@@ -129,6 +133,7 @@ class PlayerDetailsPageWidgetState extends State<PlayerDetailsPage> {
     );
   }
 
+  // Stats consists of a column with an underlined title, goals and assists in a row, and then yellow / red in another row
   Widget _buildStats() {
     return new Container(
       child: new Column(
@@ -196,6 +201,7 @@ class PlayerDetailsPageWidgetState extends State<PlayerDetailsPage> {
     );
   }
 
+  // drop down populates itself with the list of charities
   Widget _buildDropDown() {
     return new Container(
      child: new DropdownButton(
@@ -206,11 +212,12 @@ class PlayerDetailsPageWidgetState extends State<PlayerDetailsPage> {
            );
          }),
          hint: new Text(
-           _selectedCharity ?? 'Select a Charity',
+           _selectedCharity ?? 'Select a Charity', // the currently selected index is held as default hint text in the picker
            style: theme.textStyle,
          ),
          onChanged: (value) {
            setState(() {
+             // update the selected charity in a set state on pick
              _selectedIndex = value;
              _selectedCharity = charities[value]['name'];
            });
@@ -222,6 +229,7 @@ class PlayerDetailsPageWidgetState extends State<PlayerDetailsPage> {
     );
   }
 
+  // builds either the sub or unsub button based on the reported subscribe status from the backend
   List<Widget> _buildButton() {
     if (_subbed == null) {
       return [];
@@ -243,8 +251,10 @@ class PlayerDetailsPageWidgetState extends State<PlayerDetailsPage> {
     }
   }
 
+  // if the subscribe button is tapped we attempt to add the subscription in Firestore and update the state of the widget if successful
   void _subscribeTapped() async {
     if (_selectedIndex == -1) {
+      //TODO: add alert dialog if user attempts to subscribe before selecting a charity
       print('select a charity before you try to subscribe!');
       return;
     } else {
@@ -256,6 +266,7 @@ class PlayerDetailsPageWidgetState extends State<PlayerDetailsPage> {
     }
   }
 
+  // we attempt to remove the subscription from Firestore and update the widget if successful
   void _unsubscribeTapped() async {
     bool result = await sub.removeSubscription(player.id);
     if (result) {

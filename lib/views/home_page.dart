@@ -9,7 +9,7 @@ import 'package:gfg_mobile/util/themes.dart';
 
 class HomePage extends StatefulWidget {
 
-  HomePage(this.onSignedOut);
+  HomePage(this.onSignedOut); // on signed out callback to take us back to the Root page except to Login instead
   final VoidCallback onSignedOut;
 
   @override
@@ -19,11 +19,12 @@ class HomePage extends StatefulWidget {
 class HomePageWidgetState extends State<HomePage> {
   HomePageWidgetState(this.onSignedOut);
   final VoidCallback onSignedOut;
-  int _currentIndex = 0;
-  List<Widget> pages = List();
+  int _currentIndex = 0; // index of the currently selected view from the bottom navigation bar
+  List<Widget> pages = List(); // the 5 different options in the bottom navigation bar
   final AuthService auth = new AuthService();
   final theme = new Themes();
 
+  // on Initialization we want to add all of our pages to the list that populates the nav bar
   @override
   void initState() {
     pages.add(ProfilePage());
@@ -37,7 +38,7 @@ class HomePageWidgetState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return new Scaffold(
-      body: pages[_currentIndex],
+      body: pages[_currentIndex], // defaults to profile page but changes as the user navigates
       bottomNavigationBar: new Theme(
         data: new ThemeData(
           canvasColor: Colors.black,
@@ -78,7 +79,7 @@ class HomePageWidgetState extends State<HomePage> {
           currentIndex: _currentIndex,
           onTap: (int index) {
             setState(() {
-              _currentIndex = index;
+              _currentIndex = index; // resets the state but with current index as the tapped index, meaning the body of the scaffold will be the desired page
             });
           },
           type: BottomNavigationBarType.shifting,

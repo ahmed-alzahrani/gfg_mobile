@@ -1,3 +1,4 @@
+// Models incoming Charity information from the GFG-Webapp server
 class Charity {
   String name;
   String id;

@@ -40,6 +40,7 @@ class _RootPageState extends State<RootPage> {
   }
 
 
+  // returns either the home page or the login page based on whether or not the user is logged in
   @override
   Widget build(BuildContext context) {
     switch (_authStatus) {

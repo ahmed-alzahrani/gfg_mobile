@@ -20,7 +20,7 @@ class SubscriptionsPageState extends State<SubscriptionsPage>{
   final sub = new SubscriptionService();
   final theme = new Themes();
   final key = new GlobalKey<ScaffoldState>();
-  final TextEditingController _filter = new TextEditingController();
+  final TextEditingController _filter = new TextEditingController(); // text controller for search bar
   List subscriptions = new List();
   List filteredSubscriptions = new List();
   Widget _appBarTitle;
@@ -61,6 +61,7 @@ class SubscriptionsPageState extends State<SubscriptionsPage>{
     );
   }
 
+  // builds the AppBar with the search bar available if the search icon is tapped
   Widget _buildBar(BuildContext context) {
     return new AppBar(
       centerTitle: true,
@@ -99,6 +100,7 @@ class SubscriptionsPageState extends State<SubscriptionsPage>{
     );
   }
 
+  // returns a promise that resolves to a list containing the current user's subscriptions
   Future<void> _getSubscriptions () async {
     List allSubs = await data.subscriptions();
     setState(() {
@@ -109,6 +111,7 @@ class SubscriptionsPageState extends State<SubscriptionsPage>{
     return;
   }
 
+  // actually builds out the list view based on the subscription data retrieved from server
   Widget _buildSubscriptions() {
     if (!(_searchText.isEmpty)) {
       List tempList = new List();
@@ -144,6 +147,8 @@ class SubscriptionsPageState extends State<SubscriptionsPage>{
     );
   }
 
+  // build subscription obj based on the subscription tile that was tapped
+  // TODO: look into mapping function
   void _subTapped(int index) async {
     String id = filteredSubscriptions[index]['id'];
     String charity = filteredSubscriptions[index]['charity'];

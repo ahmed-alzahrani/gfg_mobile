@@ -2,12 +2,14 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:dio/dio.dart';
 import 'dart:async';
 
+// Auth Service handles communication with FirebaseAuth
 class AuthService {
   AuthService();
 
   final FirebaseAuth auth = FirebaseAuth.instance;
-  final dio = new Dio();
+  final dio = new Dio(); // dio for our REST requests
 
+  // Makes a call to the GFG-Webapp server to create a new user in the Firestore if FirebaseAuth adds the user successfully to authentication
   void createAccount (String email, String password) async {
     try {
       FirebaseUser user = await auth.createUserWithEmailAndPassword(email: email, password: password);
@@ -25,6 +27,7 @@ class AuthService {
     }
   }
 
+  //logs the user into the Firebase Authentication
   void login (String email, String password) async {
     try {
       //TODO: add ios app to Firebase project on mac once xcode is installed
@@ -35,24 +38,27 @@ class AuthService {
     }
   }
 
+  // queries FirebaseAuth to tell us the uid of the currently logged in user
   Future<String> currentUser () async {
     try {
       FirebaseUser user = await auth.currentUser();
       if (user == null) {
-        return null;
+        return "";
       } else {
         return user.uid;
       }
     } catch(error) {
       print("error: $error");
-      return null;
+      return "";
     }
   }
 
+  // makes a call to the FirebaseAuth signout
   Future<void> signOut() async {
     auth.signOut();
   }
 
+  // makes a call to send password reset email
   Future<void> passwordReset(String email) async {
     return auth.sendPasswordResetEmail(email: email);
   }

@@ -13,11 +13,12 @@ class MatchesPageWidgetState extends State<MatchesPage> {
   final data = new DataService();
   final theme = new Themes();
   List matches = new List();
-  List participants = new List();
-  bool _loading = true;
+  List participants = new List(); // participants in a single game that the user is subbed to
+  bool _loading = true; // for our progress indicator during lengthy load time of match info
 
   @override
   void initState() {
+    // call to get matches on init
     this._getMatches();
     super.initState();
   }
@@ -28,6 +29,7 @@ class MatchesPageWidgetState extends State<MatchesPage> {
     return Scaffold(
       appBar: _buildBar(context),
       body: Container(
+        // either shows the progress indicator or the matches depending on loading bool
         child: _buildProgressHUD(),
       ),
       resizeToAvoidBottomPadding: false,
@@ -45,11 +47,12 @@ class MatchesPageWidgetState extends State<MatchesPage> {
     );
   }
 
+  // the child of the progressHUD is what displays after the loading stage
   Widget _buildProgressHUD () {
     return ModalProgressHUD(
         child: _buildMatches(),
-        inAsyncCall: _loading,
-        progressIndicator: new RefreshProgressIndicator(),
+        inAsyncCall: _loading, // represents the flag in the async call that notifies the modal when the data is loaded
+        progressIndicator: new RefreshProgressIndicator(), // refresh progress indicator is the type of UI element the user sees
     );
   }
 

@@ -10,6 +10,7 @@ class AboutPage extends StatelessWidget{
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: _buildBar(context),
+      // body simply contains a scrollable view with some text about the project / my aim
       body: new Container(
         child: SingleChildScrollView(
           // replace this Lorem Ipsum below with an actual about section
@@ -32,6 +33,7 @@ class AboutPage extends StatelessWidget{
     );
   }
 
+  // the app bar that will be at the top of the scaffold
   _buildBar(BuildContext context) {
     return new AppBar(
       title: Text(
@@ -39,6 +41,7 @@ class AboutPage extends StatelessWidget{
         style: theme.textStyle,
       ),
       centerTitle: true,
+      // default logout button
       actions: <Widget>[
         new FlatButton(
           child: theme.logout,

@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:url_launcher/url_launcher.dart';
+import 'package:url_launcher/url_launcher.dart'; // allows us to launch each charities external website from the client on push of a button
 import 'package:gfg_mobile/models/charity.dart';
 import 'package:gfg_mobile/util/themes.dart';
 
 class CharityDetailsPage extends StatefulWidget {
   CharityDetailsPage(this.charity);
-  final Charity charity;
+  final Charity charity; // the charity this page is being built for
 
   @override
   State<StatefulWidget> createState() => CharityDetailsPageWidgetState(charity);
@@ -20,7 +20,7 @@ class CharityDetailsPageWidgetState extends State<CharityDetailsPage> {
   Widget build(BuildContext context) {
     return new Scaffold(
         appBar: AppBar(
-          leading: new IconButton(
+          leading: new IconButton( // replace the default leading arrow to change color
             icon: new Icon(
               Icons.arrow_back,
               color: theme.textColor,
@@ -43,7 +43,7 @@ class CharityDetailsPageWidgetState extends State<CharityDetailsPage> {
           children: [
             new Container(
               child: new Image.asset(
-                charity.imagePath ?? 'assets/images/charities/Charity_Not_Found.png',
+                charity.imagePath ?? 'assets/images/charities/Charity_Not_Found.png', // image path in backend should reflect image path in client pubspec.yaml
                 height: 200.0,
                 width: 200.0,
               )
@@ -76,6 +76,7 @@ class CharityDetailsPageWidgetState extends State<CharityDetailsPage> {
     );
   }
 
+  // takes the charity URL and launches it in the phone's browser
   _launchUrl() async {
     String url = charity.website;
     try {

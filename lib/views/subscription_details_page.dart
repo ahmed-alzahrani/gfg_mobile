@@ -5,7 +5,7 @@ import 'package:gfg_mobile/services/subscription_service.dart';
 import 'package:gfg_mobile/services/data_service.dart';
 
 class SubscriptionDetailsPage extends StatefulWidget {
-  SubscriptionDetailsPage(this.subscription);
+  SubscriptionDetailsPage(this.subscription); // the subscription that this page is being built based on
   final Subscription subscription;
 
   @override
@@ -20,10 +20,11 @@ class SubscriptionDetailsPageWidgetState extends State<SubscriptionDetailsPage> 
   final theme = new Themes();
   List charities = [];
   String _selectedCharity;
-  int _selectedIndex = -1;
+  int _selectedIndex = -1; // initialize in a state where no charity has been selected
 
   @override
   void initState() {
+    // grab the charities on init
     _setupCharities();
     super.initState();
   }
