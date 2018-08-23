@@ -5,29 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="67c8fb9b-f652-4b7d-83ce-bd062c2407dd" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/CHANGELOG.md" afterPath="$PROJECT_DIR$/CHANGELOG.md" />
-      <change beforePath="$PROJECT_DIR$/lib/models/charity.dart" afterPath="$PROJECT_DIR$/lib/models/charity.dart" />
-      <change beforePath="$PROJECT_DIR$/lib/models/match.dart" afterPath="$PROJECT_DIR$/lib/models/match.dart" />
-      <change beforePath="$PROJECT_DIR$/lib/models/player.dart" afterPath="$PROJECT_DIR$/lib/models/player.dart" />
-      <change beforePath="$PROJECT_DIR$/lib/models/profile.dart" afterPath="$PROJECT_DIR$/lib/models/profile.dart" />
-      <change beforePath="$PROJECT_DIR$/lib/models/subscription.dart" afterPath="$PROJECT_DIR$/lib/models/subscription.dart" />
       <change beforePath="$PROJECT_DIR$/lib/services/auth_service.dart" afterPath="$PROJECT_DIR$/lib/services/auth_service.dart" />
       <change beforePath="$PROJECT_DIR$/lib/services/data_service.dart" afterPath="$PROJECT_DIR$/lib/services/data_service.dart" />
       <change beforePath="$PROJECT_DIR$/lib/services/subscription_service.dart" afterPath="$PROJECT_DIR$/lib/services/subscription_service.dart" />
-      <change beforePath="$PROJECT_DIR$/lib/util/themes.dart" afterPath="$PROJECT_DIR$/lib/util/themes.dart" />
-      <change beforePath="$PROJECT_DIR$/lib/views/about_page.dart" afterPath="$PROJECT_DIR$/lib/views/about_page.dart" />
-      <change beforePath="$PROJECT_DIR$/lib/views/charities_page.dart" afterPath="$PROJECT_DIR$/lib/views/charities_page.dart" />
-      <change beforePath="$PROJECT_DIR$/lib/views/charity_details_page.dart" afterPath="$PROJECT_DIR$/lib/views/charity_details_page.dart" />
-      <change beforePath="$PROJECT_DIR$/lib/views/home_page.dart" afterPath="$PROJECT_DIR$/lib/views/home_page.dart" />
-      <change beforePath="$PROJECT_DIR$/lib/views/login_page.dart" afterPath="$PROJECT_DIR$/lib/views/login_page.dart" />
-      <change beforePath="$PROJECT_DIR$/lib/views/matches_page.dart" afterPath="$PROJECT_DIR$/lib/views/matches_page.dart" />
-      <change beforePath="$PROJECT_DIR$/lib/views/player_details_page.dart" afterPath="$PROJECT_DIR$/lib/views/player_details_page.dart" />
-      <change beforePath="$PROJECT_DIR$/lib/views/players_page.dart" afterPath="$PROJECT_DIR$/lib/views/players_page.dart" />
       <change beforePath="$PROJECT_DIR$/lib/views/profile_page.dart" afterPath="$PROJECT_DIR$/lib/views/profile_page.dart" />
-      <change beforePath="$PROJECT_DIR$/lib/views/root_page.dart" afterPath="$PROJECT_DIR$/lib/views/root_page.dart" />
-      <change beforePath="$PROJECT_DIR$/lib/views/subscription_details_page.dart" afterPath="$PROJECT_DIR$/lib/views/subscription_details_page.dart" />
-      <change beforePath="$PROJECT_DIR$/lib/views/subscriptions_page.dart" afterPath="$PROJECT_DIR$/lib/views/subscriptions_page.dart" />
     </list>
     <ignored path="$PROJECT_DIR$/.dart_tool/" />
     <ignored path="$PROJECT_DIR$/.idea/" />
@@ -45,11 +27,26 @@
       <file leaf-file-name="profile_page.dart" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/views/profile_page.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2295">
-              <caret line="84" column="0" lean-forward="false" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
+            <state relative-caret-position="333">
+              <caret line="231" column="46" lean-forward="false" selection-start-line="231" selection-start-column="46" selection-end-line="231" selection-end-column="46" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CHANGELOG.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/CHANGELOG.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="376">
+                <caret line="182" column="89" lean-forward="false" selection-start-line="182" selection-start-column="89" selection-end-line="182" selection-end-column="89" />
+                <folding />
+              </first_editor>
+              <second_editor>
+                <markdownNavigatorState />
+              </second_editor>
             </state>
           </provider>
         </entry>
@@ -76,50 +73,37 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CHANGELOG.md" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/CHANGELOG.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="539">
-                <caret line="176" column="60" lean-forward="false" selection-start-line="176" selection-start-column="60" selection-end-line="176" selection-end-column="60" />
-                <folding />
-              </first_editor>
-              <second_editor>
-                <markdownNavigatorState />
-              </second_editor>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="player_details_page.dart" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/views/player_details_page.dart">
+      <file leaf-file-name="data_service.dart" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/services/data_service.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2670">
-              <caret line="74" column="20" lean-forward="true" selection-start-line="74" selection-start-column="20" selection-end-line="74" selection-end-column="20" />
+            <state relative-caret-position="253">
+              <caret line="101" column="39" lean-forward="false" selection-start-line="101" selection-start-column="36" selection-end-line="101" selection-end-column="39" />
               <folding>
-                <element signature="e#0#39#0" expanded="true" />
+                <element signature="e#0#30#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="themes.dart" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/util/themes.dart">
+      <file leaf-file-name="subscription_service.dart" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/services/subscription_service.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="22" column="4" lean-forward="false" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="4" />
-              <folding />
+            <state relative-caret-position="657">
+              <caret line="88" column="45" lean-forward="false" selection-start-line="88" selection-start-column="45" selection-end-line="88" selection-end-column="45" />
+              <folding>
+                <element signature="e#0#30#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="subscriptions_page.dart" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/views/subscriptions_page.dart">
+      <file leaf-file-name="auth_service.dart" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/services/auth_service.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-3">
-              <caret line="63" column="81" lean-forward="false" selection-start-line="63" selection-start-column="81" selection-end-line="63" selection-end-column="81" />
+            <state relative-caret-position="-129">
+              <caret line="17" column="30" lean-forward="true" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
               <folding>
-                <element signature="e#0#39#0" expanded="true" />
+                <element signature="e#0#50#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -136,8 +120,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>paddi</find>
-      <find>&quot;</find>
       <find>_selectedIn</find>
       <find>_del</find>
       <find>delete su</find>
@@ -153,7 +135,6 @@
       <find>print</find>
       <find>Alert</find>
       <find>Ok</find>
-      <find>profile</find>
       <find>_email</find>
       <find>_topCharity</find>
       <find>picker</find>
@@ -166,6 +147,9 @@
       <find>auth</find>
       <find>update</find>
       <find>title</find>
+      <find>profile</find>
+      <find>get</find>
+      <find>getProfi</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -195,9 +179,6 @@
         <option value="$PROJECT_DIR$/lib/models/player.dart" />
         <option value="$PROJECT_DIR$/lib/models/profile.dart" />
         <option value="$PROJECT_DIR$/lib/models/subscription.dart" />
-        <option value="$PROJECT_DIR$/lib/services/auth_service.dart" />
-        <option value="$PROJECT_DIR$/lib/services/data_service.dart" />
-        <option value="$PROJECT_DIR$/lib/services/subscription_service.dart" />
         <option value="$PROJECT_DIR$/lib/views/about_page.dart" />
         <option value="$PROJECT_DIR$/lib/views/charities_page.dart" />
         <option value="$PROJECT_DIR$/lib/views/charity_details_page.dart" />
@@ -206,11 +187,14 @@
         <option value="$PROJECT_DIR$/lib/views/matches_page.dart" />
         <option value="$PROJECT_DIR$/lib/views/player_details_page.dart" />
         <option value="$PROJECT_DIR$/lib/views/players_page.dart" />
-        <option value="$PROJECT_DIR$/lib/views/profile_page.dart" />
         <option value="$PROJECT_DIR$/lib/views/root_page.dart" />
         <option value="$PROJECT_DIR$/lib/views/subscription_details_page.dart" />
         <option value="$PROJECT_DIR$/lib/views/subscriptions_page.dart" />
         <option value="$PROJECT_DIR$/lib/util/themes.dart" />
+        <option value="$PROJECT_DIR$/lib/services/data_service.dart" />
+        <option value="$PROJECT_DIR$/lib/services/auth_service.dart" />
+        <option value="$PROJECT_DIR$/lib/services/subscription_service.dart" />
+        <option value="$PROJECT_DIR$/lib/views/profile_page.dart" />
         <option value="$PROJECT_DIR$/CHANGELOG.md" />
       </list>
     </option>
@@ -257,13 +241,7 @@
               <item name="gfg_mobile" type="b2602c69:ProjectViewProjectNode" />
               <item name="gfg_mobile" type="462c0819:PsiDirectoryNode" />
               <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gfg_mobile" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gfg_mobile" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="services" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -419,7 +397,7 @@
       <window_info id="Android Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Dart Analysis" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17391305" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Dart Analysis" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17391305" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Flutter Outline" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Logcat" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -432,7 +410,7 @@
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20217392" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.46195653" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32717392" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32932165" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -490,7 +468,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="Dart">
           <url>file://$PROJECT_DIR$/lib/services/subscription_service.dart</url>
-          <line>48</line>
+          <line>43</line>
         </line-breakpoint>
         <line-breakpoint enabled="true" type="Dart">
           <url>file://$PROJECT_DIR$/lib/views/subscriptions_page.dart</url>
@@ -759,36 +737,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/services/auth_service.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="429">
-          <caret line="51" column="14" lean-forward="false" selection-start-line="51" selection-start-column="14" selection-end-line="51" selection-end-column="14" />
-          <folding>
-            <element signature="e#0#50#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/services/data_service.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="310">
-          <caret line="115" column="120" lean-forward="false" selection-start-line="115" selection-start-column="120" selection-end-line="115" selection-end-column="120" />
-          <folding>
-            <element signature="e#0#30#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/services/subscription_service.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1513">
-          <caret line="89" column="100" lean-forward="false" selection-start-line="89" selection-start-column="100" selection-end-line="89" selection-end-column="100" />
-          <folding>
-            <element signature="e#0#30#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/util/user_validator.dart">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
@@ -861,16 +809,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/views/profile_page.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2295">
-          <caret line="84" column="0" lean-forward="false" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/views/root_page.dart">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="480">
@@ -917,11 +855,51 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/lib/services/subscription_service.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="657">
+          <caret line="88" column="45" lean-forward="false" selection-start-line="88" selection-start-column="45" selection-end-line="88" selection-end-column="45" />
+          <folding>
+            <element signature="e#0#30#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/services/data_service.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="101" column="39" lean-forward="false" selection-start-line="101" selection-start-column="36" selection-end-line="101" selection-end-column="39" />
+          <folding>
+            <element signature="e#0#30#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/services/auth_service.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-129">
+          <caret line="17" column="30" lean-forward="true" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/views/profile_page.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="333">
+          <caret line="231" column="46" lean-forward="false" selection-start-line="231" selection-start-column="46" selection-end-line="231" selection-end-column="46" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/CHANGELOG.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="539">
-            <caret line="176" column="60" lean-forward="false" selection-start-line="176" selection-start-column="60" selection-end-line="176" selection-end-column="60" />
+          <first_editor relative-caret-position="376">
+            <caret line="182" column="89" lean-forward="false" selection-start-line="182" selection-start-column="89" selection-end-line="182" selection-end-column="89" />
             <folding />
           </first_editor>
           <second_editor>

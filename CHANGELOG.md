@@ -178,4 +178,6 @@ __20/08/18__
 
 - Removed FirebaseAuth as a dependency in data_service & subscription_service, all queries for current user uid is routed through auth_service
 
--
+__23/08/18__
+
+- Updated routes to work with new API design to adhere to OpenAPI specification standards

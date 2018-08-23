@@ -11,13 +11,8 @@ class SubscriptionService {
   Future<bool> checkSubscription (String player) async {
     try {
       final uid = await auth.currentUser();
-      Response response = await dio.post(
-        "http://10.0.2.2:8080/amISubscribed",
-        data: {
-          'uid': uid,
-          'playerId': player
-        },
-      );
+      final url = 'http"//10.0.2.2:8080/user/subscriptions/' + uid + '/' + player;
+      Response response = await dio.get(url);
       return response.data['result'];
     } catch (error) {
       print("error: $error");
@@ -30,7 +25,7 @@ class SubscriptionService {
     try {
       final uid = await auth.currentUser();
       Response response = await dio.post(
-        "http://10.0.2.2:8080/subscribe",
+        "http://10.0.2.2:8080/user/subscriptions",
         data: {
           'uid': uid,
           'playerId': player,
@@ -54,7 +49,7 @@ class SubscriptionService {
     try {
       final uid = await auth.currentUser();
       Response response = await dio.delete(
-        'http://10.0.2.2:8080/unsubscribe',
+        'http://10.0.2.2:8080/user/subscriptions',
         data: {
           'uid': uid,
           'playerId': player
@@ -72,7 +67,7 @@ class SubscriptionService {
     try {
       final uid = await auth.currentUser();
       Response response = await dio.put(
-        'http://10.0.2.2:8080/updateSubscription',
+        'http://10.0.2.2:8080/user/subscriptions',
         data: {
           'uid': uid,
           'playerId': player,
@@ -91,7 +86,7 @@ class SubscriptionService {
   Future<List> getSubscriptions () async {
     try {
       final uid = await auth.currentUser();
-      final url = 'http://10.0.2.2:8080/subscriptions' + uid;
+      final url = 'http://10.0.2.2:8080/user/subscriptions' + uid;
       Response response = await dio.get(url);
       return response.data;
     } catch (error) {

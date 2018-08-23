@@ -12,7 +12,7 @@ class DataService {
   // returns a promise that resolves to a list of all the players available for subscription
   Future<List> allPlayers () async {
     try {
-      final response = await dio.get('http://10.0.2.2:8080/players');
+      final response = await dio.get('http://10.0.2.2:8080/player/all');
       return (response.data);
     } catch (error) {
       print("error! $error");
@@ -59,7 +59,7 @@ class DataService {
   Future<List> matches () async {
     try {
       final uid = await auth.currentUser();
-      final url = 'http://10.0.2.2:8080/matches/' + uid;
+      final url = 'http://10.0.2.2:8080/user/matches/' + uid;
       final response = await dio.get(url);
       return response.data;
     } catch (error) {
@@ -71,7 +71,7 @@ class DataService {
   // returns a promise that resolves to a list of Matches a specific player is featuring in the next 3 months
   Future<List> playerMatches (String teamId) async {
     try {
-      final url = 'http://10.0.2.2:8080/playerMatches/' + teamId;
+      final url = 'http://10.0.2.2:8080/player/matches/' + teamId;
       final response = await dio.get(url);
       return response.data;
     } catch (error) {
@@ -85,7 +85,7 @@ class DataService {
     // make a call to the localServer at /subscriptions/:userId
     final uid = await auth.currentUser();
     try{
-      final url = 'http://10.0.2.2:8080/subscriptions/' + uid;
+      final url = 'http://10.0.2.2:8080/user/subscriptions/' + uid;
       final response = await dio.get(url);
       return response.data;
     } catch (error) {
@@ -98,14 +98,8 @@ class DataService {
   Future<List> participants(String localTeamId, String visitorTeamId) async {
     final uid = await auth.currentUser();
     try {
-      final url = 'http://10.0.2.2:8080/participants/' + uid;
-      Response response = await dio.post(
-        url,
-        data: {
-          'localTeamId': localTeamId,
-          'visitorTeamId': visitorTeamId,
-        }
-      );
+      final url = 'http://10.0.2.2:8080/user/participants/' + uid + '/' + localTeamId + '/' + visitorTeamId;
+      Response response = await dio.get(url);
       return response.data;
     } catch (error) {
       print("error: $error");
@@ -117,7 +111,7 @@ class DataService {
   Future<bool> updateProfile (String first, String last, String country) async {
     try {
       final uid = await auth.currentUser();
-      final url = 'http://10.0.2.2:8080/updateProfile/' + uid;
+      final url = 'http://10.0.2.2:8080/user/profile/' + uid;
       Response response = await dio.put(
         url,
         data: {

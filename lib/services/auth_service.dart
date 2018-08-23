@@ -15,7 +15,7 @@ class AuthService {
       FirebaseUser user = await auth.createUserWithEmailAndPassword(email: email, password: password);
       print("user: $user");
       Response response = await dio.post(
-        "http://10.0.2.2:8080/addUser",
+        "http://10.0.2.2:8080/user/profile",
         data: {
           'uid': user.uid,
           'email': email,

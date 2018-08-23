@@ -229,7 +229,7 @@ class ProfilePageWidgetState extends State<ProfilePage> {
   void _getProfile() async {
     final uid = await auth.currentUser();
     try {
-      String url = 'http://10.0.2.2:8080/profile/' + uid;
+      String url = 'http://10.0.2.2:8080/user/profile/' + uid;
       final response = await dio.get(url);
 
       List<Goal> goals = new List();
