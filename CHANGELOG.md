@@ -182,6 +182,8 @@ __23/08/18__
 
 - Updated routes to work with new API design to adhere to OpenAPI specification standards
 
+__24/08/18__
+
 - Fixed logout button and login flow
 
 - tweaked services for new API design
