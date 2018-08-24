@@ -94,7 +94,10 @@ class SubscriptionsPageState extends State<SubscriptionsPage>{
       actions: <Widget>[
         new FlatButton(
           child: theme.logout,
-          onPressed: auth.signOut,
+          onPressed: () {
+            auth.signOut();
+            Navigator.pushNamed(context, '/logout');
+          },
         )
       ],
     );

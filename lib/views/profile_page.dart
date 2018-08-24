@@ -76,7 +76,10 @@ class ProfilePageWidgetState extends State<ProfilePage> {
       actions: <Widget>[
         new FlatButton(
           child: theme.logout,
-          onPressed: auth.signOut,
+          onPressed: () {
+            auth.signOut();
+            Navigator.pushNamed(context, '/logout');
+          },
         ),
       ],
       centerTitle: true,

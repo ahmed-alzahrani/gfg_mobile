@@ -90,7 +90,10 @@ class PlayersPageState extends State<PlayersPage>{
       actions: <Widget>[
         new FlatButton(
           child: theme.logout,
-          onPressed: auth.signOut,
+          onPressed: () {
+            auth.signOut();
+            Navigator.pushNamed(context, '/logout');
+          },
         )
       ],
     );
@@ -142,7 +145,7 @@ class PlayersPageState extends State<PlayersPage>{
           leading: CircleAvatar(
             backgroundColor: Colors.black,
             child: Text(
-              filteredPlayers[index]['number'] ?? '0',
+              filteredPlayers[index]['number'].toString() ?? '0',
               style: theme.textStyle,
             ),
           ),
@@ -154,20 +157,20 @@ class PlayersPageState extends State<PlayersPage>{
 
   // constructs the Player information based on the tile tap and passes that to the Navigator to bring up the PlayerDetailsPage
   void _playerTapped(int index) {
-    String id = filteredPlayers[index]['id'];
+    String id = filteredPlayers[index]['id'].toString();
     String name = filteredPlayers[index]['name'];
-    String age = filteredPlayers[index]['age'];
+    String age = filteredPlayers[index]['age'].toString();
     String position = filteredPlayers[index]['position'];
-    String team = filteredPlayers[index]['team'];
+    String team = filteredPlayers[index]['team'].toString();
     String teamName = filteredPlayers[index]['teamName'];
     String league = filteredPlayers[index]['league'];
-    int number = int.parse(filteredPlayers[index]['number']);
+    int number = filteredPlayers[index]['number'];
     String injured = filteredPlayers[index]['injured'];
-    int appearences = int.parse(filteredPlayers[index]['appearences']);
-    int goals = int.parse(filteredPlayers[index]['goals']);
-    int assits = int.parse(filteredPlayers[index]['assists']);
-    int yellowCards = int.parse(filteredPlayers[index]['yellowcards']);
-    int redCards = int.parse(filteredPlayers[index]['redcards']);
+    int appearences = filteredPlayers[index]['appearences'];
+    int goals = filteredPlayers[index]['goals'];
+    int assits = filteredPlayers[index]['assists'];
+    int yellowCards = filteredPlayers[index]['yellowcards'];
+    int redCards = filteredPlayers[index]['redcards'];
 
     PlayerStats stats = new PlayerStats(appearences, goals, assits, yellowCards, redCards);
     Player player = new Player(id, name, age, position, team, teamName, league, number, injured, stats);

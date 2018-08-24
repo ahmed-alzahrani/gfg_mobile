@@ -11,7 +11,7 @@ class SubscriptionService {
   Future<bool> checkSubscription (String player) async {
     try {
       final uid = await auth.currentUser();
-      final url = 'http"//10.0.2.2:8080/user/subscriptions/' + uid + '/' + player;
+      final url = 'http://10.0.2.2:8080/user/subscriptions/' + uid + '/' + player;
       Response response = await dio.get(url);
       return response.data['result'];
     } catch (error) {

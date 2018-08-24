@@ -6,7 +6,7 @@ import 'package:gfg_mobile/services/auth_service.dart';
 class DataService {
   DataService();
 
-  final dio = new Dio(); // dio for our POST requests
+  final dio = new Dio(); // dio for our REST requests
   final auth = new AuthService();
 
   // returns a promise that resolves to a list of all the players available for subscription
@@ -120,7 +120,10 @@ class DataService {
           'country': country
         }
       );
-      return response.data['result'];
+      if (response != null) {
+        return true;
+      }
+      return false;
     } catch (error) {
       print('error: $error');
       return false;
