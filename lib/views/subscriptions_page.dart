@@ -153,9 +153,9 @@ class SubscriptionsPageState extends State<SubscriptionsPage>{
   // build subscription obj based on the subscription tile that was tapped
   // TODO: look into mapping function
   void _subTapped(int index) async {
-    String id = filteredSubscriptions[index]['id'];
+    String id = filteredSubscriptions[index]['id'].toString();
     String charity = filteredSubscriptions[index]['charity'];
-    String charityId = filteredSubscriptions[index]['charityId'];
+    String charityId = filteredSubscriptions[index]['charityId'].toString();
     int goals = filteredSubscriptions[index]['goals'];
     String name = filteredSubscriptions[index]['name'];
     String teamName = filteredSubscriptions[index]['teamName'];

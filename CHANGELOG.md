@@ -155,7 +155,7 @@ __16/08/18__
 
 - Loading time for matches from back end is very slow, so i added in a circular progress indicator for the user so they understand it is loading
 
-- Added a new alert Dialog when the user clicks on a match in Matches, it shows them all the players they are subcribed to that are playing in that match
+- Added a new alert Dialog when the user clicks on a match in Matches, it shows them all the players they are subscribed to that are playing in that match
 
 __17/08/18__
 
@@ -187,3 +187,5 @@ __24/08/18__
 - Fixed logout button and login flow
 
 - tweaked services for new API design
+
+- changed response handling in sub service for adding / removing / updating a subscription

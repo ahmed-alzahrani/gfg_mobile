@@ -13,7 +13,7 @@ class SubscriptionService {
       final uid = await auth.currentUser();
       final url = 'http://10.0.2.2:8080/user/subscriptions/' + uid + '/' + player;
       Response response = await dio.get(url);
-      return response.data['result'];
+      return response.data;
     } catch (error) {
       print("error: $error");
       return false;
@@ -22,6 +22,7 @@ class SubscriptionService {
 
   // returns a future that resolves to a bool that indicates whether or not a subscription was successfully added to Firebase Firestore
   Future<bool> addSubscription (String player, String playerName, String team, String teamName, String charityName, String charity) async {
+    print('a call to add subscription has been made');
     try {
       final uid = await auth.currentUser();
       Response response = await dio.post(
@@ -36,8 +37,12 @@ class SubscriptionService {
           'charityId': charity
         }
       );
-      print('returning ${response.data['result']}');
-      return response.data['result'];
+      print(response.statusCode);
+      if (response.statusCode == 200) {
+        return true;
+      } else {
+        return false;
+      }
     } catch (error) {
       print("error: $error");
       return false;
@@ -55,7 +60,11 @@ class SubscriptionService {
           'playerId': player
         }
       );
-      return response.data['result'];
+      if (response.statusCode == 200) {
+        return true;
+      } else {
+        return false;
+      }
     } catch (error) {
       print("error: $error");
       return false;
@@ -75,7 +84,11 @@ class SubscriptionService {
           'charityId': charityId,
         }
       );
-      return response.data['result'];
+      if (response.statusCode == 200) {
+        return true;
+      } else {
+        return false;
+      }
     } catch (error) {
       print("error: $error");
       return false;
