@@ -40,7 +40,7 @@ class ProfilePageWidgetState extends State<ProfilePage> {
   @override
   void dispose() {
     _firstController.dispose();
-    _lastController.dispose;
+    _lastController.dispose();
     super.dispose();
   }
 
@@ -153,16 +153,8 @@ class ProfilePageWidgetState extends State<ProfilePage> {
         // _buildTopCharity(),
         _buildDropDown(),
         _buildSubmitButton(),
+        _buildDeleteProfileButton(),
       ],
-    );
-  }
-
-  Widget _buildSubmitButton() {
-    return new RaisedButton(
-      child: Text('Submit Changes'),
-      color: Colors.black,
-      textColor: theme.textColor,
-      onPressed: _submitPressed,
     );
   }
 
@@ -211,8 +203,36 @@ class ProfilePageWidgetState extends State<ProfilePage> {
         },
       ),
       padding: EdgeInsets.only(
-        top: 50.0,
-        bottom: 50.0,
+        top: 20.0,
+        bottom: 20.0,
+      ),
+    );
+  }
+
+  Widget _buildSubmitButton() {
+    return new Container(
+      child: RaisedButton(
+        child: Text('Submit Changes'),
+        color: Colors.black,
+        textColor: theme.textColor,
+        onPressed: _submitPressed,
+      ),
+      padding: EdgeInsets.only(
+        bottom: 20.0,
+      ),
+    );
+  }
+
+  Widget _buildDeleteProfileButton() {
+    return new Container(
+      child: RaisedButton(
+        child: Text('Delete Account'),
+        color: Colors.red,
+        textColor: Colors.white,
+        onPressed: _deletePressed,
+      ),
+      padding: EdgeInsets.only(
+        top: 20.0,
       ),
     );
   }
@@ -299,6 +319,44 @@ class ProfilePageWidgetState extends State<ProfilePage> {
       setState(() {
         _getProfile();
       });
+    }
+  }
+
+  void _deletePressed() async {
+    showDialog(
+      context: context,
+      builder: _showAlert
+    );
+  }
+
+  Widget _showAlert(BuildContext context) {
+    return new AlertDialog(
+      content: new Text(
+        'Are you sure you want to delete your account?',
+      ),
+      actions: <Widget>[
+        new FlatButton(
+          child: Text('Delete', style: TextStyle(color: Colors.red),),
+          onPressed: _confirmDelete,
+        ),
+        new FlatButton(
+          child: Text('Cancel'),
+          onPressed: () => Navigator.of(context).pop(),
+        )
+      ],
+    );
+  }
+
+  void _confirmDelete() async {
+    bool result = await auth.deleteUser();
+    print('result is $result');
+    if (result) {
+      print('push named');
+      Navigator.of(context).pop();
+      Navigator.pushNamed(context, '/logout');
+    } else {
+      print('navigator pop');
+      Navigator.of(context).pop();
     }
   }
 

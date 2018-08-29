@@ -63,4 +63,22 @@ class AuthService {
     return auth.sendPasswordResetEmail(email: email);
   }
 
+  Future<bool> deleteUser() async {
+    try {
+      FirebaseUser user = await auth.currentUser();
+      String url = 'http://10.0.2.2:8080/user/profile/' + user.uid;
+      Response response = await dio.delete(url);
+      if (response.statusCode == 200) {
+        user.delete();
+        auth.signOut();
+        return true;
+      } else {
+        return false;
+      }
+    } catch (error) {
+      print('error deleting user: $error');
+      return false;
+    }
+  }
+
 }

@@ -115,7 +115,7 @@ class MatchesPageWidgetState extends State<MatchesPage> {
         child: new ListView(
           shrinkWrap: true,
           children: _buildParticipants(),
-        ),
+      ),
       ),
       actions: <Widget>[
         new FlatButton(

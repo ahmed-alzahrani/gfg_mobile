@@ -189,3 +189,9 @@ __24/08/18__
 - tweaked services for new API design
 
 - changed response handling in sub service for adding / removing / updating a subscription
+
+__28/08/18__
+
+- Added delete account button to profile page, this makes a call in auth and routes through the server to delete the user profile in firestore
+
+- updated package versions
