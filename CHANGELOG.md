@@ -195,3 +195,7 @@ __28/08/18__
 - Added delete account button to profile page, this makes a call in auth and routes through the server to delete the user profile in firestore
 
 - updated package versions
+
+__31/08/18__
+
+- added archi

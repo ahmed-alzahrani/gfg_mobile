@@ -80,7 +80,7 @@ class MatchesPageWidgetState extends State<MatchesPage> {
             matches[index]['formatted_date'],
             style: theme.textStyle,
           ),
-          onTap: () => _matchTapped(index),
+          onTap: () => _matchPressed(index),
         );
       },
     );
@@ -94,19 +94,38 @@ class MatchesPageWidgetState extends State<MatchesPage> {
     });
   }
 
+  /*
   void _matchTapped(int index) async {
+    print('pre hello');
+    print('hello');
+    print(matches[index]['localteam_id']);
+    print(matches[index]['visitorteam_id']);
     String localId = matches[index]['localteam_id'];
     String visitorId = matches[index]['visitorteam_id'];
     participants = await data.participants(localId, visitorId);
-
 
     showDialog(
         context: context,
         builder: _showParticipants
     );
   }
+  */
+
+  void _matchPressed(int index) async {
+    print('before');
+    print(matches[index]['localteam_id']);
+    print(matches[index]['visitorteam_id']);
+    participants = await data.participants(matches[index]['localteam_id'], matches[index]['visitorteam_id']);
+    print('after');
+
+    showDialog(
+      context: context,
+      builder: _showParticipants
+    );
+  }
 
   Widget _showParticipants(BuildContext context) {
+    print('hnnggg');
     return new AlertDialog(
       title: Text('You are subscribed to the following players in this match:'),
       content: new Container(
