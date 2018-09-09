@@ -28,13 +28,15 @@ class AuthService {
   }
 
   //logs the user into the Firebase Authentication
-  void login (String email, String password) async {
+  Future<bool> login (String email, String password) async {
     try {
       //TODO: add ios app to Firebase project on mac once xcode is installed
       FirebaseUser user = await auth.signInWithEmailAndPassword(email: email, password: password);
       print("user: $user");
+      return true;
     } catch (error) {
       print("error: $error");
+      return false;
     }
   }
 
@@ -69,6 +71,7 @@ class AuthService {
       String url = 'http://10.0.2.2:8080/user/profile/' + user.uid;
       Response response = await dio.delete(url);
       if (response.statusCode == 200) {
+        print('deleting user');
         user.delete();
         auth.signOut();
         return true;

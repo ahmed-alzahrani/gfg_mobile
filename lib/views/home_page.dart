@@ -9,17 +9,20 @@ import 'package:gfg_mobile/util/themes.dart';
 
 class HomePage extends StatefulWidget {
 
-  HomePage(this.onSignedOut); // on signed out callback to take us back to the Root page except to Login instead
+  HomePage(this.onSignedOut, this.index);
+  // on signed out callback to take us back to the Root page except to Login instead
   final VoidCallback onSignedOut;
+  final int index;
 
   @override
-  State<StatefulWidget> createState() => HomePageWidgetState(onSignedOut);
+  State<StatefulWidget> createState() => HomePageWidgetState(onSignedOut, index);
 }
 
 class HomePageWidgetState extends State<HomePage> {
-  HomePageWidgetState(this.onSignedOut);
+  HomePageWidgetState(this.onSignedOut, this.entryIndex);
   final VoidCallback onSignedOut;
-  int _currentIndex = 0; // index of the currently selected view from the bottom navigation bar
+  int entryIndex;
+  int _currentIndex; // index of the currently selected view from the bottom navigation bar
   List<Widget> pages = List(); // the 5 different options in the bottom navigation bar
   final AuthService auth = new AuthService();
   final theme = new Themes();
@@ -27,6 +30,7 @@ class HomePageWidgetState extends State<HomePage> {
   // on Initialization we want to add all of our pages to the list that populates the nav bar
   @override
   void initState() {
+    _currentIndex = entryIndex;
     pages.add(ProfilePage());
     pages.add(PlayersPage());
     pages.add(CharitiesPage());

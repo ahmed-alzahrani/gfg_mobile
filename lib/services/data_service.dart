@@ -96,7 +96,6 @@ class DataService {
 
   // returns a promise that resolves to a list of players that play for teams participating in a specific match
   Future<List> participants(String localTeamId, String visitorTeamId) async {
-    print('ok');
     final uid = await auth.currentUser();
     try {
       final url = 'http://10.0.2.2:8080/user/participants/' + uid + '/' + localTeamId + '/' + visitorTeamId;

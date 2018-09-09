@@ -3,6 +3,7 @@ class UserValidator {
 
   // validates that a proper e-mail address has been entered
   bool isEmailAddressValid(String email) {
+    print('checking email');
     RegExp exp = new RegExp (
       r"^[\w-.]+@([\w-]+.)+[\w-]{2,4}$",
       caseSensitive: false,
@@ -24,6 +25,9 @@ class UserValidator {
   */
 
   bool isPasswordValid(String password) {
-    return true;
+    print('checking password');
+    print(password);
+    print(password.length);
+    return (password.length > 5);
   }
 }

@@ -198,4 +198,12 @@ __28/08/18__
 
 __31/08/18__
 
-- added archi
+- added architectural diagrams
+
+__09/09/18__
+
+- Fixed call to participants
+
+- Fixed login flow / reverted from using a form to using text fields and controllers with my own validation
+
+-

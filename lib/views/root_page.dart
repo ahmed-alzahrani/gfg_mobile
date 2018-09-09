@@ -11,6 +11,7 @@ class RootPage extends StatefulWidget {
 }
 
 enum AuthStatus {
+  createAccount,
   signedIn,
   notSignedIn
 }
@@ -27,8 +28,14 @@ class _RootPageState extends State<RootPage> {
     });
   }
 
+  void _createAccount() {
+    setState(() {
+      _authStatus = AuthStatus.createAccount;
+    });
+  }
   void _signedIn() {
     setState(() {
+     // _index = index;
       _authStatus = AuthStatus.signedIn;
     });
   }
@@ -45,9 +52,11 @@ class _RootPageState extends State<RootPage> {
   Widget build(BuildContext context) {
     switch (_authStatus) {
       case AuthStatus.signedIn:
-        return new HomePage(_signedOut);
+        return new HomePage(_signedOut, 0);
+      case AuthStatus.createAccount:
+        return new HomePage(_signedOut, 4);
       default:
-        return new LoginPage(_signedIn);
+        return new LoginPage(_signedIn, _createAccount);
     }
   }
 }
