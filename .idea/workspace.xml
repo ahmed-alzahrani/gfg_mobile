@@ -5,15 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="67c8fb9b-f652-4b7d-83ce-bd062c2407dd" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/CHANGELOG.md" afterPath="$PROJECT_DIR$/CHANGELOG.md" />
-      <change beforePath="$PROJECT_DIR$/lib/services/auth_service.dart" afterPath="$PROJECT_DIR$/lib/services/auth_service.dart" />
-      <change beforePath="$PROJECT_DIR$/lib/services/data_service.dart" afterPath="$PROJECT_DIR$/lib/services/data_service.dart" />
-      <change beforePath="$PROJECT_DIR$/lib/util/user_validator.dart" afterPath="$PROJECT_DIR$/lib/util/user_validator.dart" />
-      <change beforePath="$PROJECT_DIR$/lib/views/home_page.dart" afterPath="$PROJECT_DIR$/lib/views/home_page.dart" />
-      <change beforePath="$PROJECT_DIR$/lib/views/login_page.dart" afterPath="$PROJECT_DIR$/lib/views/login_page.dart" />
-      <change beforePath="$PROJECT_DIR$/lib/views/matches_page.dart" afterPath="$PROJECT_DIR$/lib/views/matches_page.dart" />
-      <change beforePath="$PROJECT_DIR$/lib/views/root_page.dart" afterPath="$PROJECT_DIR$/lib/views/root_page.dart" />
     </list>
     <ignored path="$PROJECT_DIR$/.dart_tool/" />
     <ignored path="$PROJECT_DIR$/.idea/" />
@@ -50,12 +42,12 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="CHANGELOG.md" pinned="false" current-in-tab="false">
+          <file leaf-file-name="CHANGELOG.md" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/CHANGELOG.md">
               <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
                 <state split_layout="SPLIT">
-                  <first_editor relative-caret-position="629">
-                    <caret line="208" column="1" lean-forward="false" selection-start-line="208" selection-start-column="1" selection-end-line="208" selection-end-column="1" />
+                  <first_editor relative-caret-position="547">
+                    <caret line="208" column="136" lean-forward="false" selection-start-line="208" selection-start-column="136" selection-end-line="208" selection-end-column="136" />
                     <folding />
                   </first_editor>
                   <second_editor>
@@ -65,7 +57,7 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="login_page.dart" pinned="false" current-in-tab="true">
+          <file leaf-file-name="login_page.dart" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/lib/views/login_page.dart">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="896">
@@ -219,8 +211,8 @@
         <option value="$PROJECT_DIR$/lib/services/data_service.dart" />
         <option value="$PROJECT_DIR$/lib/views/root_page.dart" />
         <option value="$PROJECT_DIR$/lib/views/matches_page.dart" />
-        <option value="$PROJECT_DIR$/CHANGELOG.md" />
         <option value="$PROJECT_DIR$/lib/views/login_page.dart" />
+        <option value="$PROJECT_DIR$/CHANGELOG.md" />
       </list>
     </option>
   </component>
@@ -817,7 +809,7 @@
         <state relative-caret-position="220">
           <caret line="16" column="37" lean-forward="false" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="37" />
           <folding>
-            <element signature="e#0#39#0" expanded="true" />
+            <element signature="e#0#39#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -843,19 +835,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CHANGELOG.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="629">
-            <caret line="208" column="1" lean-forward="false" selection-start-line="208" selection-start-column="1" selection-end-line="208" selection-end-column="1" />
-            <folding />
-          </first_editor>
-          <second_editor>
-            <markdownNavigatorState />
-          </second_editor>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/services/auth_service.dart">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-170">
@@ -871,6 +850,19 @@
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CHANGELOG.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="547">
+            <caret line="208" column="136" lean-forward="false" selection-start-line="208" selection-start-column="136" selection-end-line="208" selection-end-column="136" />
+            <folding />
+          </first_editor>
+          <second_editor>
+            <markdownNavigatorState />
+          </second_editor>
         </state>
       </provider>
     </entry>

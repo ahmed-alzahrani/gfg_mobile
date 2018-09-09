@@ -206,4 +206,4 @@ __09/09/18__
 
 - Fixed login flow / reverted from using a form to using text fields and controllers with my own validation
 
--
+- Account creation now routes users to about page and login routes to profile to mask janky profile page directly after account creation
