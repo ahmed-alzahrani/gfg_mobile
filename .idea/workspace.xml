@@ -10,7 +10,91 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="67c8fb9b-f652-4b7d-83ce-bd062c2407dd" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_SDK.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_SDK.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Flutter_for_Android.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Flutter_for_Android.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flutter_playground/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flutter_playground/.idea/codeStyles/Project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flutter_playground/.idea/libraries/Dart_Packages.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flutter_playground/.idea/libraries/Dart_SDK.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flutter_playground/.idea/libraries/Flutter_Plugins.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flutter_playground/.idea/libraries/Flutter_for_Android.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flutter_playground/.idea/markdown-navigator.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flutter_playground/.idea/markdown-navigator/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flutter_playground/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flutter_playground/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flutter_playground/.idea/runConfigurations/main_dart.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flutter_playground/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flutter_playground/.metadata" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flutter_playground/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flutter_playground/android/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flutter_playground/android/app/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flutter_playground/android/app/src/main/AndroidManifest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flutter_playground/android/app/src/main/java/com/example/flutterplayground/MainActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flutter_playground/android/app/src/main/res/drawable/launch_background.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flutter_playground/android/app/src/main/res/mipmap-hdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flutter_playground/android/app/src/main/res/mipmap-mdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flutter_playground/android/app/src/main/res/mipmap-xhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flutter_playground/android/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flutter_playground/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flutter_playground/android/app/src/main/res/values/styles.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flutter_playground/android/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flutter_playground/android/gradle.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flutter_playground/android/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flutter_playground/android/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flutter_playground/android/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flutter_playground/android/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flutter_playground/android/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flutter_playground/flutter_playground.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flutter_playground/flutter_playground_android.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flutter_playground/ios/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flutter_playground/ios/Flutter/AppFrameworkInfo.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flutter_playground/ios/Flutter/Debug.xcconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flutter_playground/ios/Flutter/Release.xcconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flutter_playground/ios/Runner.xcodeproj/project.pbxproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flutter_playground/ios/Runner.xcodeproj/project.xcworkspace/contents.xcworkspacedata" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flutter_playground/ios/Runner.xcodeproj/xcshareddata/xcschemes/Runner.xcscheme" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flutter_playground/ios/Runner.xcworkspace/contents.xcworkspacedata" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flutter_playground/ios/Runner/AppDelegate.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flutter_playground/ios/Runner/AppDelegate.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flutter_playground/ios/Runner/Assets.xcassets/AppIcon.appiconset/Contents.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flutter_playground/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flutter_playground/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-20x20@1x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flutter_playground/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-20x20@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flutter_playground/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-20x20@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flutter_playground/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-29x29@1x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flutter_playground/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-29x29@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flutter_playground/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-29x29@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flutter_playground/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-40x40@1x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flutter_playground/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-40x40@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flutter_playground/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-40x40@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flutter_playground/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-60x60@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flutter_playground/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-60x60@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flutter_playground/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-76x76@1x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flutter_playground/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-76x76@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flutter_playground/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-83.5x83.5@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flutter_playground/ios/Runner/Assets.xcassets/LaunchImage.imageset/Contents.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flutter_playground/ios/Runner/Assets.xcassets/LaunchImage.imageset/LaunchImage.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flutter_playground/ios/Runner/Assets.xcassets/LaunchImage.imageset/LaunchImage@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flutter_playground/ios/Runner/Assets.xcassets/LaunchImage.imageset/LaunchImage@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flutter_playground/ios/Runner/Assets.xcassets/LaunchImage.imageset/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flutter_playground/ios/Runner/Base.lproj/LaunchScreen.storyboard" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flutter_playground/ios/Runner/Base.lproj/Main.storyboard" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flutter_playground/ios/Runner/Info.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flutter_playground/ios/Runner/main.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flutter_playground/lib/main.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flutter_playground/pubspec.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flutter_playground/pubspec.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flutter_playground/test/widget_test.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gfg_mobile.iml" beforeDir="false" afterPath="$PROJECT_DIR$/gfg_mobile.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Flutter/Debug.xcconfig" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Flutter/Debug.xcconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Flutter/Release.xcconfig" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Flutter/Release.xcconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Runner.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Runner.xcodeproj/project.pbxproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Runner.xcworkspace/contents.xcworkspacedata" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Runner.xcworkspace/contents.xcworkspacedata" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.dart_tool/" />
     <ignored path="$PROJECT_DIR$/.idea/" />
@@ -24,105 +108,62 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.56411916">
-      <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="root_page.dart" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/lib/views/root_page.dart">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="782">
-                  <caret line="49" column="30" selection-start-line="49" selection-start-column="30" selection-end-line="49" selection-end-column="30" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="home_page.dart" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/lib/views/home_page.dart">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="442">
-                  <caret line="33" column="16" selection-start-line="33" selection-start-column="16" selection-end-line="33" selection-end-column="16" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="CHANGELOG.md" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/CHANGELOG.md">
-              <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-                <state split_layout="SPLIT">
-                  <first_editor relative-caret-position="448">
-                    <caret line="208" column="136" selection-start-line="208" selection-start-column="136" selection-end-line="208" selection-end-column="136" />
-                  </first_editor>
-                  <second_editor>
-                    <markdownNavigatorState />
-                  </second_editor>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="login_page.dart" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/lib/views/login_page.dart">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="3587">
-                  <caret line="214" column="3" selection-start-line="214" selection-start-column="3" selection-end-line="214" selection-end-column="3" />
-                  <folding>
-                    <element signature="e#0#39#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="profile_page.dart" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/lib/views/profile_page.dart">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1207">
-                  <caret line="77" column="29" selection-start-line="77" selection-start-column="23" selection-end-line="77" selection-end-column="29" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="players_page.dart" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/lib/views/players_page.dart">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1139">
-                  <caret line="73" column="46" selection-start-line="73" selection-start-column="46" selection-end-line="73" selection-end-column="46" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="auth_service.dart" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/lib/services/auth_service.dart">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="17">
-                  <caret line="13" column="9" selection-start-line="13" selection-start-column="9" selection-end-line="13" selection-end-column="9" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="subscription_service.dart" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/lib/services/subscription_service.dart">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1479">
-                  <caret line="89" column="21" selection-start-line="89" selection-start-column="21" selection-end-line="89" selection-end-column="21" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="data_service.dart" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/lib/services/data_service.dart">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1819">
-                  <caret line="109" selection-start-line="109" selection-end-line="109" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/android/app/build.gradle">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="795">
+              <caret line="53" selection-start-line="53" selection-end-line="53" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/android/build.gradle">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" column="5" selection-start-line="4" selection-start-column="5" selection-end-line="4" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Flutter_for_Android.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.idea/libraries/Flutter_for_Android.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" column="12" lean-forward="true" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="16" column="11" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="subscription_service.dart" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/services/subscription_service.dart">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1305">
+              <caret line="89" column="21" selection-start-line="89" selection-start-column="21" selection-end-line="89" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="data_service.dart" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/services/data_service.dart">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1605">
+              <caret line="109" selection-start-line="109" selection-end-line="109" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -178,7 +219,6 @@
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/lib/services/util_service.dart" />
         <option value="$PROJECT_DIR$/lib/validators/user_validator.dart" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/lib/models/Subscription.dart" />
         <option value="$PROJECT_DIR$/lib/main.dart" />
         <option value="$PROJECT_DIR$/lib/models/charity.dart" />
@@ -194,7 +234,6 @@
         <option value="$PROJECT_DIR$/lib/views/subscriptions_page.dart" />
         <option value="$PROJECT_DIR$/lib/services/subscription_service.dart" />
         <option value="$PROJECT_DIR$/lib/views/player_details_page.dart" />
-        <option value="$PROJECT_DIR$/pubspec.yaml" />
         <option value="$PROJECT_DIR$/lib/views/profile_page.dart" />
         <option value="$PROJECT_DIR$/lib/views/subscription_details_page.dart" />
         <option value="$PROJECT_DIR$/lib/util/user_validator.dart" />
@@ -205,13 +244,16 @@
         <option value="$PROJECT_DIR$/lib/views/matches_page.dart" />
         <option value="$PROJECT_DIR$/lib/views/login_page.dart" />
         <option value="$PROJECT_DIR$/CHANGELOG.md" />
+        <option value="$PROJECT_DIR$/pubspec.yaml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Flutter_for_Android.xml" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-7" />
-    <option name="width" value="1445" />
-    <option name="height" value="1047" />
+  <component name="ProjectFrameBounds">
+    <option name="y" value="23" />
+    <option name="width" value="720" />
+    <option name="height" value="877" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -221,6 +263,28 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="AndroidView">
+        <subPane>
+          <expand>
+            <path>
+              <item name="gfg_mobile" type="1abcf292:AndroidViewProjectNode" />
+              <item name="gfg_mobile" type="e9137016:NonAndroidModuleNode" />
+            </path>
+            <path>
+              <item name="gfg_mobile" type="1abcf292:AndroidViewProjectNode" />
+              <item name="gfg_mobile_android" type="e9137016:NonAndroidModuleNode" />
+            </path>
+            <path>
+              <item name="gfg_mobile" type="1abcf292:AndroidViewProjectNode" />
+              <item name="gfg_mobile_android" type="e9137016:NonAndroidModuleNode" />
+              <item name="java" type="f7eae187:NonAndroidSourceTypeNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -228,30 +292,23 @@
               <item name="gfg_mobile" type="b2602c69:ProjectViewProjectNode" />
               <item name="gfg_mobile" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="gfg_mobile" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gfg_mobile" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
-        <option name="show-excluded-files" value="false" />
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
-      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Flutter_Search_Example" />
     <property name="dart.analysis.tool.window.force.activate" value="false" />
-    <property name="show.migrate.to.gradle.popup" value="false" />
     <property name="io.flutter.reload.alreadyRun" value="true" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
+    <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/.idea/libraries" />
+      <recent name="$PROJECT_DIR$/android/app" />
       <recent name="C:\Users\Ahmed\Desktop\Developer\gfg_mobile\lib\views" />
       <recent name="C:\Users\Ahmed\Desktop\Developer\gfg_mobile\android\app" />
     </key>
@@ -352,40 +409,41 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="0" y="23" width="720" height="877" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info anchor="bottom" id="Android Profiler" order="0" show_stripe_button="false" />
-      <window_info anchor="bottom" id="TODO" order="3" weight="0.32930845" />
-      <window_info active="true" anchor="bottom" id="Messages" order="8" visible="true" weight="0.33006537" />
-      <window_info anchor="right" id="Palette&#9;" order="8" />
-      <window_info id="Image Layers" order="7" />
+      <window_info anchor="bottom" id="Android Profiler" order="6" show_stripe_button="false" />
+      <window_info anchor="bottom" id="TODO" order="5" />
+      <window_info anchor="right" id="Palette&#9;" order="3" />
+      <window_info id="Image Layers" order="2" />
       <window_info id="Build Variants" order="2" side_tool="true" />
-      <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info anchor="bottom" id="Event Log" order="1" sideWeight="0.5024458" side_tool="true" weight="0.35784853" />
-      <window_info anchor="bottom" id="Dart Analysis" order="13" weight="0.17343578" />
-      <window_info anchor="bottom" id="Run" order="9" sideWeight="0.49755415" weight="0.22391304" />
-      <window_info anchor="bottom" id="Version Control" order="2" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.14782609" />
-      <window_info anchor="right" id="Flutter Outline" order="3" />
-      <window_info anchor="bottom" id="Logcat" order="4" />
-      <window_info id="Captures" order="5" weight="0.32932165" />
-      <window_info id="Capture Tool" order="3" />
-      <window_info id="Designer" order="4" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17697228" />
+      <window_info anchor="right" id="Capture Analysis" order="3" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5007153" side_tool="true" weight="0.32948717" />
+      <window_info anchor="bottom" id="Dart Analysis" order="12" weight="0.32948717" />
+      <window_info anchor="bottom" id="Run" order="13" sideWeight="0.49928468" weight="0.32948717" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.4985694" weight="0.32948717" />
+      <window_info anchor="right" id="Flutter Outline" order="4" />
+      <window_info anchor="bottom" id="Logcat" order="10" />
+      <window_info id="Captures" order="2" />
+      <window_info id="Capture Tool" order="2" />
+      <window_info id="Designer" order="2" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.32300884" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="right" id="Device File Explorer" order="4" side_tool="true" />
-      <window_info anchor="right" id="Theme Preview" order="6" />
-      <window_info anchor="bottom" id="Debug" order="10" weight="0.4" />
-      <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info anchor="right" id="Flutter Inspector" order="7" weight="0.0" />
-      <window_info anchor="bottom" id="Inspection" order="12" weight="0.4" />
+      <window_info anchor="right" id="Device File Explorer" order="3" side_tool="true" />
+      <window_info anchor="right" id="Theme Preview" order="3" />
+      <window_info anchor="bottom" id="Debug" order="2" weight="0.4" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="right" id="Flutter Inspector" order="4" />
+      <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.49928468" weight="0.32948717" />
+      <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
-      <window_info anchor="bottom" id="Message" order="5" />
-      <window_info anchor="bottom" id="Cvs" order="11" weight="0.25" />
+      <window_info anchor="right" id="Assistant" order="4" visible="true" weight="0.3297568" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="6" />
+      <window_info anchor="bottom" id="Find" order="1" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -393,58 +451,11 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="Dart">
-          <url>file://$PROJECT_DIR$/lib/services/subscription_service.dart</url>
-          <line>48</line>
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="Dart">
-          <url>file://$PROJECT_DIR$/lib/views/subscriptions_page.dart</url>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="Dart">
-          <url>file://$PROJECT_DIR$/lib/views/profile_page.dart</url>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="Dart">
-          <url>file://$PROJECT_DIR$/lib/views/player_details_page.dart</url>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="Dart">
-          <url>file://$PROJECT_DIR$/lib/views/home_page.dart</url>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-      </breakpoints>
       <option name="time" value="9" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/lib/util/user_validator.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="6" lean-forward="true" selection-start-line="19" selection-start-column="6" selection-end-line="19" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="32" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="425">
-            <caret line="25" column="35" selection-start-line="25" selection-start-column="35" selection-end-line="25" selection-end-column="35" />
-          </first_editor>
-          <second_editor>
-            <markdownNavigatorState />
-          </second_editor>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md" />
     <entry file="file://$PROJECT_DIR$/lib/services/data_service.dart">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="816">
@@ -470,9 +481,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="629">
           <caret line="40" column="52" selection-start-line="40" selection-start-column="52" selection-end-line="40" selection-end-column="52" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -515,9 +523,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
           <caret line="21" column="51" selection-start-line="21" selection-start-column="51" selection-end-line="21" selection-end-column="51" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -542,18 +547,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/android/app/google-services.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/android/app/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="53" lean-forward="true" selection-start-line="53" selection-end-line="53" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/android/app/src/main/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -561,22 +554,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/android/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="55" selection-start-line="8" selection-start-column="55" selection-end-line="8" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/about.png" />
     <entry file="file://$PROJECT_DIR$/lib/services/util_service.dart" />
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="7" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/views/subscriptions_page.dart">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -652,13 +631,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pubspec.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="23" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/views/charities_page.dart">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="286">
@@ -694,37 +666,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/views/players_page.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1139">
-          <caret line="73" column="46" selection-start-line="73" selection-start-column="46" selection-end-line="73" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/services/subscription_service.dart">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1479">
+        <state relative-caret-position="1305">
           <caret line="89" column="21" selection-start-line="89" selection-start-column="21" selection-end-line="89" selection-end-column="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/views/profile_page.dart">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1207">
+        <state relative-caret-position="1065">
           <caret line="77" column="29" selection-start-line="77" selection-start-column="23" selection-end-line="77" selection-end-column="29" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/services/data_service.dart">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1819">
+        <state relative-caret-position="1605">
           <caret line="109" selection-start-line="109" selection-end-line="109" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/views/root_page.dart">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="782">
+        <state relative-caret-position="690">
           <caret line="49" column="30" selection-start-line="49" selection-start-column="30" selection-end-line="49" selection-end-column="30" />
         </state>
       </provider>
@@ -736,51 +701,82 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="425">
-            <caret line="25" column="35" lean-forward="true" selection-start-line="25" selection-start-column="35" selection-end-line="25" selection-end-column="35" />
-          </first_editor>
-          <second_editor>
-            <markdownNavigatorState />
-          </second_editor>
+    <entry file="file://$PROJECT_DIR$/README.md" />
+    <entry file="file://$PROJECT_DIR$/lib/views/login_page.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3165">
+          <caret line="214" column="3" selection-start-line="214" selection-start-column="3" selection-end-line="214" selection-end-column="3" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/views/home_page.dart">
+    <entry file="file://$PROJECT_DIR$/CHANGELOG.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="33" column="16" selection-start-line="33" selection-start-column="16" selection-end-line="33" selection-end-column="16" />
+        <state relative-caret-position="166">
+          <caret line="48" selection-start-line="48" selection-end-line="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flutter_playground/test/widget_test.dart" />
+    <entry file="file://$PROJECT_DIR$/pubspec.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/services/auth_service.dart">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="13" column="9" selection-start-line="13" selection-start-column="9" selection-end-line="13" selection-end-column="9" />
+        <state relative-caret-position="375">
+          <caret line="27" column="3" selection-start-line="27" selection-start-column="3" selection-end-line="27" selection-end-column="3" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/views/login_page.dart">
+    <entry file="file://$PROJECT_DIR$/lib/views/home_page.dart">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3587">
-          <caret line="214" column="3" selection-start-line="214" selection-start-column="3" selection-end-line="214" selection-end-column="3" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="150">
+          <caret line="17" column="27" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="27" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CHANGELOG.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="448">
-            <caret line="208" column="136" selection-start-line="208" selection-start-column="136" selection-end-line="208" selection-end-column="136" />
-          </first_editor>
-          <second_editor>
-            <markdownNavigatorState />
-          </second_editor>
+    <entry file="file://$PROJECT_DIR$/lib/views/players_page.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="30" column="21" lean-forward="true" selection-start-line="30" selection-start-column="21" selection-end-line="30" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/android/app/google-services.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="37" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/android/app/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="795">
+          <caret line="53" selection-start-line="53" selection-end-line="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/android/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="5" selection-start-line="4" selection-start-column="5" selection-end-line="4" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/libraries/Flutter_for_Android.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="12" lean-forward="true" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="11" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="11" />
         </state>
       </provider>
     </entry>

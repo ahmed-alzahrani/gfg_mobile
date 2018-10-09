@@ -11,3 +11,7 @@ build/
 android/app/google-services.json
 
 assets/
+
+ios/Podfile
+ios/Podfile.lock
+ios/Runner.xcworkspace/xcshareddata/
